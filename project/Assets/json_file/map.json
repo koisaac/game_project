@@ -1,0 +1,44 @@
+{
+    "map_type": {
+        "0": {
+            "floor": {
+                "len": 5,
+                "element": [
+                    {
+                        "start_tile": { "x": 5, "y": 0 },
+                        "len": 11,
+                        "direction": "left"
+                    },
+                    {
+                        "start_tile": { "x": 5, "y": 1 },
+                        "len": 11,
+                        "direction": "left"
+                    },
+                    {
+                        "start_tile": { "x": 5, "y": -1 },
+                        "len": 11,
+                        "direction": "left"
+                    },
+                    {
+                        "start_tile": { "x": 4, "y": -2 },
+                        "len": 9,
+                        "direction": "left"
+                    },
+                    {
+                        "start_tile": { "x": 4, "y": 2 },
+                        "len": 9,
+                        "direction": "left"
+                    }
+                ]
+            },
+            "doorway": {
+                "len": 2,
+                "element": [
+                    { "x": 6, "y": 0 },
+                    { "x": -6, "y": 0 }
+                ]
+            },
+            "pixel": 13
+        }
+    }
+}
