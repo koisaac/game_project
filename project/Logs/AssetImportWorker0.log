@@ -15,7 +15,7 @@ C:/Users/HP/Desktop/game_project/project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57803
+55697
 Successfully changed project path to: C:/Users/HP/Desktop/game_project/project
 C:/Users/HP/Desktop/game_project/project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/HP/Desktop/game_project/project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19060] Host "[IP] 172.27.32.1 [Port] 0 [Flags] 2 [Guid] 2141925281 [EditorId] 2141925281 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LGUPBTK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [22856] Host "[IP] 172.27.32.1 [Port] 0 [Flags] 2 [Guid] 2272351860 [EditorId] 2272351860 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LGUPBTK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19060] Host "[IP] 172.27.32.1 [Port] 0 [Flags] 2 [Guid] 2141925281 [EditorId] 2141925281 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LGUPBTK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [22856] Host "[IP] 172.27.32.1 [Port] 0 [Flags] 2 [Guid] 2272351860 [EditorId] 2272351860 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LGUPBTK) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 17.59 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 23.82 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56424
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.018849 seconds.
-- Loaded All Assemblies, in  0.397 seconds
+Registered in 0.024111 seconds.
+- Loaded All Assemblies, in  0.551 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.264 seconds
-Domain Reload Profiling: 657ms
-	BeginReloadAssembly (131ms)
+- Finished resetting the current domain, in  0.399 seconds
+Domain Reload Profiling: 945ms
+	BeginReloadAssembly (166ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (35ms)
+	RebuildCommonClasses (48ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (84ms)
-	LoadAllAssembliesAndSetupDomain (130ms)
-		LoadAssemblies (125ms)
+	initialDomainReloadingComplete (97ms)
+	LoadAllAssembliesAndSetupDomain (223ms)
+		LoadAssemblies (160ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (120ms)
-			TypeCache.Refresh (119ms)
-				TypeCache.ScanAssembly (109ms)
+		AnalyzeDomain (208ms)
+			TypeCache.Refresh (206ms)
+				TypeCache.ScanAssembly (185ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (264ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (399ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (198ms)
+		SetupLoadedEditorAssemblies (319ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (11ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (126ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (216ms)
+			ProcessInitializeOnLoadMethodAttributes (71ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,569 +117,52 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.871 seconds
-Refreshing native plugins compatible for Editor in 6.89 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.875 seconds
+Refreshing native plugins compatible for Editor in 8.72 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.517 seconds
-Domain Reload Profiling: 1380ms
-	BeginReloadAssembly (180ms)
+- Finished resetting the current domain, in  0.610 seconds
+Domain Reload Profiling: 1475ms
+	BeginReloadAssembly (146ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (585ms)
-		LoadAssemblies (413ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (50ms)
+	LoadAllAssembliesAndSetupDomain (631ms)
+		LoadAssemblies (406ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (255ms)
-			TypeCache.Refresh (234ms)
-				TypeCache.ScanAssembly (222ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
+		AnalyzeDomain (291ms)
+			TypeCache.Refresh (268ms)
+				TypeCache.ScanAssembly (254ms)
+			ScanForSourceGeneratedMonoScriptInfo (20ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (518ms)
+	FinalizeReload (610ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (377ms)
+		SetupLoadedEditorAssemblies (462ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (79ms)
-			ProcessInitializeOnLoadAttributes (241ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (16ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (281ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (23ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 9.11 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (10ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 13.65 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4058 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 69 unused Assets / (172.7 KB). Loaded Objects now: 4518.
-Memory consumption went from 149.6 MB to 149.4 MB.
-Total: 3.075300 ms (FindLiveObjects: 0.252400 ms CreateObjectMapping: 0.120900 ms MarkObjects: 2.505100 ms  DeleteObjects: 0.194800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1457474.845661 seconds.
-  path: Assets/TextMesh Pro/Fonts/NanumSquareRoundEB SDF.asset
-  artifactKey: Guid(26ad99c3c6bcaba448f5c18e6b53aa5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/NanumSquareRoundEB SDF.asset using Guid(26ad99c3c6bcaba448f5c18e6b53aa5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33c1753d2927777ad46e20a85d40d8c') in 0.215929 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 3.706225 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Fonts
-  artifactKey: Guid(b63e0053080646b9819789bf3bf9fa17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Fonts using Guid(b63e0053080646b9819789bf3bf9fa17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e000bc7e4b9cd39811b7cd5d94f58491') in 0.001528 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 49.368128 seconds.
-  path: Assets/Scripts/button/move_scenes.cs
-  artifactKey: Guid(304d65d04b525ec4cb16bd1be3f0beec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/button/move_scenes.cs using Guid(304d65d04b525ec4cb16bd1be3f0beec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '389d3412244aeeaa7f940427366ba977') in 0.000880 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 41.22 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6 unused Assets / (148.3 KB). Loaded Objects now: 4563.
-Memory consumption went from 87.6 MB to 87.4 MB.
-Total: 7.555500 ms (FindLiveObjects: 0.445400 ms CreateObjectMapping: 0.332300 ms MarkObjects: 6.552900 ms  DeleteObjects: 0.222300 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.787 seconds
-Refreshing native plugins compatible for Editor in 7.38 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.066 seconds
-Domain Reload Profiling: 1842ms
-	BeginReloadAssembly (167ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (526ms)
-		LoadAssemblies (375ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (214ms)
-			TypeCache.Refresh (209ms)
-				TypeCache.ScanAssembly (197ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (1067ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (391ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (100ms)
-			ProcessInitializeOnLoadAttributes (232ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (17ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (21ms)
-Refreshing native plugins compatible for Editor in 15.78 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4039 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (173.2 KB). Loaded Objects now: 4567.
-Memory consumption went from 149.7 MB to 149.6 MB.
-Total: 3.867700 ms (FindLiveObjects: 0.372300 ms CreateObjectMapping: 0.215100 ms MarkObjects: 3.050900 ms  DeleteObjects: 0.227600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.897 seconds
-Refreshing native plugins compatible for Editor in 7.78 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.877 seconds
-Domain Reload Profiling: 1765ms
-	BeginReloadAssembly (238ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (555ms)
-		LoadAssemblies (427ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (252ms)
-			TypeCache.Refresh (246ms)
-				TypeCache.ScanAssembly (235ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (877ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (313ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (85ms)
-			ProcessInitializeOnLoadAttributes (183ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (12ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 8.01 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4039 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (172.4 KB). Loaded Objects now: 4571.
-Memory consumption went from 149.7 MB to 149.6 MB.
-Total: 3.021900 ms (FindLiveObjects: 0.194000 ms CreateObjectMapping: 0.093900 ms MarkObjects: 2.590000 ms  DeleteObjects: 0.143100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.802 seconds
-Refreshing native plugins compatible for Editor in 7.41 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.839 seconds
-Domain Reload Profiling: 1626ms
-	BeginReloadAssembly (167ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (64ms)
-	LoadAllAssembliesAndSetupDomain (511ms)
-		LoadAssemblies (378ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (193ms)
-				TypeCache.ScanAssembly (183ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (839ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (296ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (79ms)
-			ProcessInitializeOnLoadAttributes (168ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (16ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 10.56 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4039 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (172.4 KB). Loaded Objects now: 4575.
-Memory consumption went from 149.7 MB to 149.6 MB.
-Total: 3.072600 ms (FindLiveObjects: 0.256600 ms CreateObjectMapping: 0.140300 ms MarkObjects: 2.445700 ms  DeleteObjects: 0.228700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 84.975350 seconds.
-  path: Assets/Scenes/option.unity
-  artifactKey: Guid(c5646f53a267d274a99769b18d280d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/option.unity using Guid(c5646f53a267d274a99769b18d280d7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84264b7bd85b999f4c750bf10ae139b4') in 0.004962 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 16.750750 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8dc71cfff9329a0c596613cb95afeea') in 0.000756 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 35.514694 seconds.
-  path: Assets/Scenes/start_scene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/start_scene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214344a1acb1aa000284768070cc9996') in 0.000657 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.864 seconds
-Refreshing native plugins compatible for Editor in 7.17 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.032 seconds
-Domain Reload Profiling: 1886ms
-	BeginReloadAssembly (164ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (609ms)
-		LoadAssemblies (452ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (225ms)
-			TypeCache.Refresh (220ms)
-				TypeCache.ScanAssembly (208ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1032ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (401ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (102ms)
-			ProcessInitializeOnLoadAttributes (231ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
-			AfterProcessingInitializeOnLoad (22ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (16ms)
-Refreshing native plugins compatible for Editor in 10.12 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4038 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (172.3 KB). Loaded Objects now: 4579.
+Unloading 69 unused Assets / (172.5 KB). Loaded Objects now: 4518.
 Memory consumption went from 149.5 MB to 149.3 MB.
-Total: 3.666000 ms (FindLiveObjects: 0.235100 ms CreateObjectMapping: 0.116500 ms MarkObjects: 3.148300 ms  DeleteObjects: 0.165000 ms)
+Total: 6.399400 ms (FindLiveObjects: 0.322700 ms CreateObjectMapping: 0.346600 ms MarkObjects: 5.233500 ms  DeleteObjects: 0.493900 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.853 seconds
-Refreshing native plugins compatible for Editor in 7.60 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.838 seconds
-Domain Reload Profiling: 1677ms
-	BeginReloadAssembly (208ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (554ms)
-		LoadAssemblies (423ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (238ms)
-			TypeCache.Refresh (231ms)
-				TypeCache.ScanAssembly (220ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (838ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (310ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (182ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (17ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 7.08 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4039 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (173.3 KB). Loaded Objects now: 4583.
-Memory consumption went from 149.7 MB to 149.6 MB.
-Total: 2.996100 ms (FindLiveObjects: 0.346900 ms CreateObjectMapping: 0.102100 ms MarkObjects: 2.290900 ms  DeleteObjects: 0.254600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.783 seconds
-Refreshing native plugins compatible for Editor in 10.41 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.016 seconds
-Domain Reload Profiling: 1790ms
-	BeginReloadAssembly (157ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (16ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (532ms)
-		LoadAssemblies (374ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (231ms)
-			TypeCache.Refresh (226ms)
-				TypeCache.ScanAssembly (214ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1017ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (354ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (83ms)
-			ProcessInitializeOnLoadAttributes (215ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (19ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 10.90 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4039 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (172.4 KB). Loaded Objects now: 4587.
-Memory consumption went from 149.7 MB to 149.6 MB.
-Total: 3.795000 ms (FindLiveObjects: 0.266600 ms CreateObjectMapping: 0.109600 ms MarkObjects: 2.942800 ms  DeleteObjects: 0.474600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\HP\Desktop\game_project\project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.822 seconds
-Refreshing native plugins compatible for Editor in 12.84 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.099 seconds
-Domain Reload Profiling: 1910ms
-	BeginReloadAssembly (159ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (40ms)
-	LoadAllAssembliesAndSetupDomain (566ms)
-		LoadAssemblies (392ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (234ms)
-			TypeCache.Refresh (229ms)
-				TypeCache.ScanAssembly (217ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1100ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (394ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (93ms)
-			ProcessInitializeOnLoadAttributes (240ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 10.66 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4039 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (172.4 KB). Loaded Objects now: 4591.
-Memory consumption went from 149.8 MB to 149.6 MB.
-Total: 3.200800 ms (FindLiveObjects: 0.252300 ms CreateObjectMapping: 0.115300 ms MarkObjects: 2.507200 ms  DeleteObjects: 0.324200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -694,17 +177,1486 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 113.690512 seconds.
-  path: Assets/배경/New Material.mat
-  artifactKey: Guid(e9a0fa7d57d812f478d7b66902a9256b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/배경/New Material.mat using Guid(e9a0fa7d57d812f478d7b66902a9256b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0cc3d79a216077f7d38b25b5704e08e') in 0.087216 seconds
+  Time since last request: 17642.973696 seconds.
+  path: Assets/배경/타일/New Palette.prefab
+  artifactKey: Guid(612c8ad4151230a4887112b379eace99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/New Palette.prefab using Guid(612c8ad4151230a4887112b379eace99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b44e175b23ee462fa3fad5bce68364b') in 0.119640 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
-  Time since last request: 6.393100 seconds.
-  path: Assets/TextMesh Pro
-  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30796653c4dfc1f2480bca9d8b60487c') in 0.001130 seconds
+  Time since last request: 2943.286871 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401.jpg
+  artifactKey: Guid(1c7b0f59ad6fcb64ba9ba943a1fdcf2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401.jpg using Guid(1c7b0f59ad6fcb64ba9ba943a1fdcf2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e5c9812d5c9f3cc86fba7d0a50b45a7') in 1.315161 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 402
+========================================================================
+Received Import Request.
+  Time since last request: 57.442328 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_0.asset
+  artifactKey: Guid(4862111a9077ef74a9e6295477a9913b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_0.asset using Guid(4862111a9077ef74a9e6295477a9913b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8add1ab099c81cccdd3aebb2fb6f943e') in 0.004711 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.005408 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_3.asset
+  artifactKey: Guid(72a7b588259b8c74f98a9a7e0346e84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_3.asset using Guid(72a7b588259b8c74f98a9a7e0346e84c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9946d0f51f121fcfb27992df2d8145cb') in 0.007999 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_10.asset
+  artifactKey: Guid(322165a099da1184ab7d478281e12513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_10.asset using Guid(322165a099da1184ab7d478281e12513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba74f23fe597e600d64cc0321a757660') in 0.007779 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_12.asset
+  artifactKey: Guid(1d7bb0f0da4d4bc4cbbe4aa2d4bc2851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_12.asset using Guid(1d7bb0f0da4d4bc4cbbe4aa2d4bc2851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be0af3f88e78f99fd2353043bd2c1df') in 0.005154 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_25.asset
+  artifactKey: Guid(692ff9396fef15c4c80f0dbdf7737ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_25.asset using Guid(692ff9396fef15c4c80f0dbdf7737ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'febf0b7a1bb88be8d0aaa0b255e7be96') in 0.005267 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_21.asset
+  artifactKey: Guid(82d4c901637878f41a1f7915f0af7b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_21.asset using Guid(82d4c901637878f41a1f7915f0af7b31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc702a5957fa26221a0d08856917916') in 0.005521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_11.asset
+  artifactKey: Guid(bd7ef68261551084ea52038f1acd1bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_11.asset using Guid(bd7ef68261551084ea52038f1acd1bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e19d7cf88915cc85fa2f875d2dc958') in 0.005848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_19.asset
+  artifactKey: Guid(f4bd2716e2b4ea943a9677014aadd2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_19.asset using Guid(f4bd2716e2b4ea943a9677014aadd2e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67c3d5fad6e4cd3fe80c8fa912598746') in 0.004856 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_22.asset
+  artifactKey: Guid(d7f12b7104317ff458b4462617dd6db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_22.asset using Guid(d7f12b7104317ff458b4462617dd6db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9888312ca3ce290e0574b57f3d6d2bb8') in 0.005046 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_18.asset
+  artifactKey: Guid(61f3d5d99c3c174489dc1577240a701a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_18.asset using Guid(61f3d5d99c3c174489dc1577240a701a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1303b53581600f1f7b96e9d87075f880') in 0.004607 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_13.asset
+  artifactKey: Guid(d244dece015463d4c9b049a4f5cd1f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_13.asset using Guid(d244dece015463d4c9b049a4f5cd1f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610a76bf067da43b138de4384df9ab6c') in 0.005214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_20.asset
+  artifactKey: Guid(7f25f2a22ece0ca40a894395a43cdde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_20.asset using Guid(7f25f2a22ece0ca40a894395a43cdde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a939347563c117399090dc4d838515b') in 0.004358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_6.asset
+  artifactKey: Guid(528a32578c6e7c44a9134200be1167e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_6.asset using Guid(528a32578c6e7c44a9134200be1167e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46befa562fe61d16f736e7b1af32e621') in 0.003643 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_9.asset
+  artifactKey: Guid(89691ac65d37db8469b1f46f280d4a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_9.asset using Guid(89691ac65d37db8469b1f46f280d4a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81eb219273488f8d486f5ea8c690b101') in 0.003565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_26.asset
+  artifactKey: Guid(c4a3b8d6132712e4fa278df243248ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_26.asset using Guid(c4a3b8d6132712e4fa278df243248ac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ced8f1ab7b727b8cca5b52d5bcc888b5') in 0.003340 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_15.asset
+  artifactKey: Guid(3429732ef14a1b4439e6b7d3e5d698b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_15.asset using Guid(3429732ef14a1b4439e6b7d3e5d698b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c646d36bd08081a7b4263d6069086b7c') in 0.003356 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_2.asset
+  artifactKey: Guid(72976920e0ae4fa4181455e803dfa9e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_2.asset using Guid(72976920e0ae4fa4181455e803dfa9e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '294b47d78e02ddae8dc05d401911f3e3') in 0.003484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_28.asset
+  artifactKey: Guid(667301819b5a5f94385b176c0111bd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_28.asset using Guid(667301819b5a5f94385b176c0111bd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '707e68e078d49ab941dad7ede38c3c0a') in 0.003815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_7.asset
+  artifactKey: Guid(d1176749067c4ff49849bc811c44111f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_7.asset using Guid(d1176749067c4ff49849bc811c44111f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0499d0bfa6016e47c9d466574f24ffa6') in 0.003947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_29.asset
+  artifactKey: Guid(d62c794a2c3367e4885f1dd9e40c676f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_29.asset using Guid(d62c794a2c3367e4885f1dd9e40c676f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34ac703b42ad0be7b17d0b4d35fb51b7') in 0.003803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.215954 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_31.asset
+  artifactKey: Guid(5830a0fbd7355f540ac25c01aa756db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_31.asset using Guid(5830a0fbd7355f540ac25c01aa756db5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fa6da88f0f3ef6af6d855bffb3dcf3f') in 0.005188 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_38.asset
+  artifactKey: Guid(d9573fe5c464ef44b94cca072df5660e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_38.asset using Guid(d9573fe5c464ef44b94cca072df5660e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8cd330a438f037ffcb2831f1bce81b4') in 0.006111 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_37.asset
+  artifactKey: Guid(9513de0282300fa4babf1f2cf2a7dcf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_37.asset using Guid(9513de0282300fa4babf1f2cf2a7dcf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e05a1a1a98dd0dc636130adf88d4ca9') in 0.003555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000705 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_36.asset
+  artifactKey: Guid(4c460df1977755f4bb28c2625563cc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_36.asset using Guid(4c460df1977755f4bb28c2625563cc9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140907e9c339355504c3d2c0c0971ee6') in 0.006517 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_40.asset
+  artifactKey: Guid(0b2636ec049de1b4bab1ca03ce1379f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_40.asset using Guid(0b2636ec049de1b4bab1ca03ce1379f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82da7c8e3290b58b49f860e4aec59368') in 0.004268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.016991 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_41.asset
+  artifactKey: Guid(b45f1f7617df3634f930ed44f76f2177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_41.asset using Guid(b45f1f7617df3634f930ed44f76f2177) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6305f35ccc884bf067b6b2152a63f1') in 0.005640 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_46.asset
+  artifactKey: Guid(439a69ef39f41a940b48db0da8dab95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_46.asset using Guid(439a69ef39f41a940b48db0da8dab95e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb87f27b625b8f6a5eae94c9142abae0') in 0.004763 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_48.asset
+  artifactKey: Guid(3a92e24ac923b8945ae82367939f8853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_48.asset using Guid(3a92e24ac923b8945ae82367939f8853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8d714fd0abd72c945ddbcb964e014bf') in 0.003760 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_43.asset
+  artifactKey: Guid(3a02b87fa47271a499b267215873779c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_43.asset using Guid(3a02b87fa47271a499b267215873779c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f70436ba7455693adef8236a6122db') in 0.004728 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000100 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_49.asset
+  artifactKey: Guid(3e64ba316eb88fb4c88daa97fa126495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_49.asset using Guid(3e64ba316eb88fb4c88daa97fa126495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '204f416a29903e6773973e60a17343a2') in 0.003099 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.033087 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_51.asset
+  artifactKey: Guid(9d6aec01e088f644fa326673a401d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_51.asset using Guid(9d6aec01e088f644fa326673a401d2c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf6b2070515c4b4e9007be74e5fea26') in 0.004352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_53.asset
+  artifactKey: Guid(be071ee269c33b54f854f4318433e5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_53.asset using Guid(be071ee269c33b54f854f4318433e5c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df677c858f9cbdc1e7d13bf7ea38d4f') in 0.003095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_58.asset
+  artifactKey: Guid(89fcb23a1e375cd43bb366be130ed1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_58.asset using Guid(89fcb23a1e375cd43bb366be130ed1d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80bcb2eccf6be123c4e2bd0494169721') in 0.003992 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_57.asset
+  artifactKey: Guid(c11767fa24f47d44b8a65bf221af39b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_57.asset using Guid(c11767fa24f47d44b8a65bf221af39b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4a1add99526c5f5120557d935d244a') in 0.004047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_60.asset
+  artifactKey: Guid(779b8cec144b38042ad489bbf696043b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_60.asset using Guid(779b8cec144b38042ad489bbf696043b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae72533700ae4e31dbf3bf22182b9115') in 0.004505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_63.asset
+  artifactKey: Guid(a371b43380958f844bf80d0dbc542dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_63.asset using Guid(a371b43380958f844bf80d0dbc542dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '930101d528d168dc7bacdcd6f96b0fa1') in 0.004300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_65.asset
+  artifactKey: Guid(3ba0e7bca51cccf499a3b430f2bbc93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_65.asset using Guid(3ba0e7bca51cccf499a3b430f2bbc93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caf7b7b0d361006e8faeabe62a192a4b') in 0.003331 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_55.asset
+  artifactKey: Guid(d78237c548b58334b832cee1fe0d4e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_55.asset using Guid(d78237c548b58334b832cee1fe0d4e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b95532e1672a5d0838f2ba3e666b31d') in 0.004391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_68.asset
+  artifactKey: Guid(46fee1ca5ad07a342845713f282294e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_68.asset using Guid(46fee1ca5ad07a342845713f282294e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5b15d018e67b47c4368d43f0b9a8c6') in 0.004080 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_69.asset
+  artifactKey: Guid(1a05bcf8d2ff1d94fb4af3faf5edbb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_69.asset using Guid(1a05bcf8d2ff1d94fb4af3faf5edbb1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '226d5da2f6186b2e9d2ac7b3d3f88605') in 0.003316 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001794 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_71.asset
+  artifactKey: Guid(66efe200af3657648b87d1dc9790f89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_71.asset using Guid(66efe200af3657648b87d1dc9790f89a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aa890ab49a0918e2b048a2bf2091633') in 0.004550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001016 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_73.asset
+  artifactKey: Guid(becaa4ca8aa05ef4896b394558fd018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_73.asset using Guid(becaa4ca8aa05ef4896b394558fd018d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87de40b3975ddcb85e77c83f0d635961') in 0.003380 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001449 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_75.asset
+  artifactKey: Guid(c59d92c3776d49b4f88f27b1699c3fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_75.asset using Guid(c59d92c3776d49b4f88f27b1699c3fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde362f0f1c4b23c1596423aded5530b') in 0.004284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_77.asset
+  artifactKey: Guid(13522a870c305794098d518f69361fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_77.asset using Guid(13522a870c305794098d518f69361fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4082554e94eb08ab56aafd57ca3e1e') in 0.004284 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_79.asset
+  artifactKey: Guid(690fc31feaed16d469f4b8d5badfaebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_79.asset using Guid(690fc31feaed16d469f4b8d5badfaebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e840feba560f376fb1eff30d344bbeb') in 0.003859 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.036257 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_81.asset
+  artifactKey: Guid(79eb49a586b04024eb2d153c1bffb110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_81.asset using Guid(79eb49a586b04024eb2d153c1bffb110) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a9b8438a2ff5590fff63f497b39dde') in 0.004524 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_84.asset
+  artifactKey: Guid(bfea58146680ca646936fd378e026354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_84.asset using Guid(bfea58146680ca646936fd378e026354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56273beb0cd925049174b3f1f4be9f84') in 0.003815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_85.asset
+  artifactKey: Guid(d195aca9b70de4d4c93aee47481b9e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_85.asset using Guid(d195aca9b70de4d4c93aee47481b9e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f46510ea99dd409ec2b37200f46329d3') in 0.003404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_90.asset
+  artifactKey: Guid(b14c8c6d1c3ba0f46bcbd14ffabafd7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_90.asset using Guid(b14c8c6d1c3ba0f46bcbd14ffabafd7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f916ea4f3557e4f02eb9ad3bc2531121') in 0.003853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_88.asset
+  artifactKey: Guid(fb60d4f85a19d7a4189589301724b048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_88.asset using Guid(fb60d4f85a19d7a4189589301724b048) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83de41c392a593a9d88b8b40ecc05cd2') in 0.003363 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.047930 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_91.asset
+  artifactKey: Guid(360b238688d8e1042bb00c5ab265a727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_91.asset using Guid(360b238688d8e1042bb00c5ab265a727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f47b291b05e0ec47febb0c5479200eb6') in 0.004597 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_97.asset
+  artifactKey: Guid(daf1d5c6e619fec46814c1906d342791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_97.asset using Guid(daf1d5c6e619fec46814c1906d342791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7b2d67fa691d0b7eaffb1a58bcc247') in 0.003141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_96.asset
+  artifactKey: Guid(9391e59a7bc5aee4c97075f793c5110e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_96.asset using Guid(9391e59a7bc5aee4c97075f793c5110e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80fc917a394776a6d22adde418426aa5') in 0.003271 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_93.asset
+  artifactKey: Guid(f58b554f2cff5f348966f96eb31975c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_93.asset using Guid(f58b554f2cff5f348966f96eb31975c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56004e0ae88207189d2fbf4f42b99d4b') in 0.003527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_100.asset
+  artifactKey: Guid(7f49481e6cf54fb49a70c1ad14f812ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_100.asset using Guid(7f49481e6cf54fb49a70c1ad14f812ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '480946e6e093dbfb2e5eac9f604a5196') in 0.004243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.574249 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_102.asset
+  artifactKey: Guid(88cb673a500c15046af28b74bf8a0f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_102.asset using Guid(88cb673a500c15046af28b74bf8a0f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb03def59df984f9cf46f9e4de494bc') in 0.014722 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001462 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_112.asset
+  artifactKey: Guid(f8d786e81eeae6542b23684c2a84de21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_112.asset using Guid(f8d786e81eeae6542b23684c2a84de21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50bf08f23aab80707270725748bd5473') in 0.009397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001222 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_118.asset
+  artifactKey: Guid(2c0b89f0c781f7d4eaebfb95656cf476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_118.asset using Guid(2c0b89f0c781f7d4eaebfb95656cf476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0f0478dd1d5fa241f1103bd526fcb5') in 0.005308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_111.asset
+  artifactKey: Guid(c7ff66b759ed6644a9635b1f0e93f894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_111.asset using Guid(c7ff66b759ed6644a9635b1f0e93f894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14b8c320cb6647267a9776283d993d2') in 0.007021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000614 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_114.asset
+  artifactKey: Guid(002b36aa2a232814bb09b7fa09a282b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_114.asset using Guid(002b36aa2a232814bb09b7fa09a282b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f4c2717f49bf916ad95956010da0c34') in 0.004839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_105.asset
+  artifactKey: Guid(b7c3ea9bb7ba0ce4293bb066d6ecc210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_105.asset using Guid(b7c3ea9bb7ba0ce4293bb066d6ecc210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78872b1a01f5974d32b3ef5d35ebe617') in 0.004915 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_108.asset
+  artifactKey: Guid(229cbee75aaee124d912294d156e4206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_108.asset using Guid(229cbee75aaee124d912294d156e4206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76317eb7d4bcc6db8c4477b32b3fb5d3') in 0.005220 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_109.asset
+  artifactKey: Guid(81736b55b3b7a1a49be922bff43c8153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_109.asset using Guid(81736b55b3b7a1a49be922bff43c8153) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7379b31e27f92b0b2f629a51daac3bed') in 0.004916 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.039600 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_122.asset
+  artifactKey: Guid(4e8dbceeb09cc3b47bca2ef3a565d6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_122.asset using Guid(4e8dbceeb09cc3b47bca2ef3a565d6ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16d606f306003141f4cdedf010ba2c0a') in 0.003307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_126.asset
+  artifactKey: Guid(11007b11bd33dc04f93dd75f1bdf197e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_126.asset using Guid(11007b11bd33dc04f93dd75f1bdf197e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '980a2c8246d613f72131ee646611ff42') in 0.003806 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_124.asset
+  artifactKey: Guid(122c812c0f8a7ba438c53528679bf338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_124.asset using Guid(122c812c0f8a7ba438c53528679bf338) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9fca728c22dd4de1268700c42262487') in 0.003909 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002168 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_131.asset
+  artifactKey: Guid(d5a78204a9b178e4287ef897587f77c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_131.asset using Guid(d5a78204a9b178e4287ef897587f77c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3425d1867da95b63ba05991c51342480') in 0.002467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001698 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_133.asset
+  artifactKey: Guid(5504e0a454c5e6749bfceca2db8c893d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_133.asset using Guid(5504e0a454c5e6749bfceca2db8c893d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4630eb72d3c5777b88266d7035c81a7') in 0.002868 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000399 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_136.asset
+  artifactKey: Guid(f1bd71340cc571547b296110a0e5db54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_136.asset using Guid(f1bd71340cc571547b296110a0e5db54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f93ba3fbad7c5df4967a1b77125e7cd') in 0.003521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000152 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_138.asset
+  artifactKey: Guid(0001267628c01a645834adef9812578f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_138.asset using Guid(0001267628c01a645834adef9812578f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e687c0a5e59b2f25da3caae2f8c4ce95') in 0.002968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000827 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_140.asset
+  artifactKey: Guid(e4846986b2fbd4341a1b78c09d3dfe08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_140.asset using Guid(e4846986b2fbd4341a1b78c09d3dfe08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a0a51a28d9d684b4c3695dc4644974') in 0.002848 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.023578 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_142.asset
+  artifactKey: Guid(60159217f44822549ac5824eacbb2628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_142.asset using Guid(60159217f44822549ac5824eacbb2628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64320e3950c7fbd72bd3f982f0000968') in 0.003073 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_144.asset
+  artifactKey: Guid(d71f83cf3de550b4c9b25a97f18b210b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_144.asset using Guid(d71f83cf3de550b4c9b25a97f18b210b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4fb9d480eb3f8ef6e82640e5ee75be') in 0.003511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_149.asset
+  artifactKey: Guid(70e8a296e6654e449922ffce40823bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_149.asset using Guid(70e8a296e6654e449922ffce40823bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c7f8d1f10732dad78a56846f0eae76') in 0.003160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.026326 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_152.asset
+  artifactKey: Guid(a148c79f1fa04ba4ebd30d5ed603c0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_152.asset using Guid(a148c79f1fa04ba4ebd30d5ed603c0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27188f752bddf8cd59c95ca6937f7d3c') in 0.002985 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_157.asset
+  artifactKey: Guid(218d9a6c0c447d745acdd3aba65e9e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_157.asset using Guid(218d9a6c0c447d745acdd3aba65e9e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3485ce8087825c82f9b3a45fede3d18e') in 0.003429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_155.asset
+  artifactKey: Guid(6ecec38ed20212a40928c2cefc23da00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_155.asset using Guid(6ecec38ed20212a40928c2cefc23da00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb9d85a3ea05cc17c25181f297505d6') in 0.003506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.026434 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_162.asset
+  artifactKey: Guid(72233586affa5a64ab2592b583f1738f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_162.asset using Guid(72233586affa5a64ab2592b583f1738f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcfc8419d7478c41332a3910604c802e') in 0.003500 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_167.asset
+  artifactKey: Guid(ba48161a7248d824c9725468cf816cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_167.asset using Guid(ba48161a7248d824c9725468cf816cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7ae1577f32dfda3f141b94e03011d5c') in 0.003104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_168.asset
+  artifactKey: Guid(ca3a173756f1a074cbb9e49159082ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_168.asset using Guid(ca3a173756f1a074cbb9e49159082ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3335b503727fec412800c9c87dd65075') in 0.004106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_169.asset
+  artifactKey: Guid(449d8f8f71cf7ff43a8e95be98fae7b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_169.asset using Guid(449d8f8f71cf7ff43a8e95be98fae7b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff8dfb3d3415aa32ad519afa84d30fd') in 0.002565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.052563 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_172.asset
+  artifactKey: Guid(449857f3b3818c646a66fc703df67f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_172.asset using Guid(449857f3b3818c646a66fc703df67f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '336fbe22eb0b8de39d331c1aae5d6849') in 0.003634 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_175.asset
+  artifactKey: Guid(17e9abea4839ec24b96488b15d6612e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_175.asset using Guid(17e9abea4839ec24b96488b15d6612e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0130eb715e94193f0dd657a2ad384500') in 0.004402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_176.asset
+  artifactKey: Guid(5ea18478c23267c4eae87522db9f7469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_176.asset using Guid(5ea18478c23267c4eae87522db9f7469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7872dea314219ea05cbd6b184ff75392') in 0.004364 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.313586 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_182.asset
+  artifactKey: Guid(a9f6ba286d1034040bf68426025d0085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_182.asset using Guid(a9f6ba286d1034040bf68426025d0085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44c866fc2c36062403b5df8023c78c3') in 0.012627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_184.asset
+  artifactKey: Guid(4ef36d1ecb637f94cb9b862e2c5c1ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_184.asset using Guid(4ef36d1ecb637f94cb9b862e2c5c1ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d941a812851479cdcb03767db5db8a4') in 0.004203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_190.asset
+  artifactKey: Guid(1a53e68d5ed0bbb4c93d7ccd2e7f0b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_190.asset using Guid(1a53e68d5ed0bbb4c93d7ccd2e7f0b65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259eaec0e86efc287272d11498110433') in 0.005000 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_191.asset
+  artifactKey: Guid(40713cd5ee99a394baa11b9874778aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_191.asset using Guid(40713cd5ee99a394baa11b9874778aeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2da33c3b385047e005c79c77a5046fb0') in 0.005925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000956 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_195.asset
+  artifactKey: Guid(2e99ade39bb0fca429087f49f7ee608a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_195.asset using Guid(2e99ade39bb0fca429087f49f7ee608a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41cda6bc7418e9d93b6d5904e3c6c693') in 0.005551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_197.asset
+  artifactKey: Guid(91c6fbc58a5c2f94d9b25b7468a6022d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_197.asset using Guid(91c6fbc58a5c2f94d9b25b7468a6022d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6902e4ade7dfd738452cd750bc6bfb4f') in 0.004879 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_200.asset
+  artifactKey: Guid(9943c6221e449b047b273a6199afb117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_200.asset using Guid(9943c6221e449b047b273a6199afb117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8634c4d3af8c4a58596b6c1266f935fd') in 0.003677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.016338 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_202.asset
+  artifactKey: Guid(ed1cb71b64e15c944a4ebeab3eef8769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_202.asset using Guid(ed1cb71b64e15c944a4ebeab3eef8769) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa653e190acf708bce6a65bc4b99a62') in 0.004085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_205.asset
+  artifactKey: Guid(aae9f6553b3b09b46bc2c26e2fd66ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_205.asset using Guid(aae9f6553b3b09b46bc2c26e2fd66ffd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3601ac2ac66cbcfd19a6c8e9b3a4ab4b') in 0.003589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_204.asset
+  artifactKey: Guid(9cd560d1ad1cab8479cd78966cdaacef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_204.asset using Guid(9cd560d1ad1cab8479cd78966cdaacef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43fb1df306115c1f22c3594a1f3b3b1') in 0.003846 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_214.asset
+  artifactKey: Guid(bff7beb4e67a18f48b309be9958c930a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_214.asset using Guid(bff7beb4e67a18f48b309be9958c930a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc457f973808290c0f037b80e00d443e') in 0.004292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_215.asset
+  artifactKey: Guid(d575fcc99a5f81f4c9ac30c8db7d370a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_215.asset using Guid(d575fcc99a5f81f4c9ac30c8db7d370a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb62065c8f7cbdd8d7954a1ead960b6') in 0.004065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001056 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_218.asset
+  artifactKey: Guid(376b75c5c128cef42b8827c69a2a163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_218.asset using Guid(376b75c5c128cef42b8827c69a2a163e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab46977cccf163edfa4355e63b9548e7') in 0.003893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.043877 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_231.asset
+  artifactKey: Guid(783c6bd7d0e71054a9cf4e35f667ec06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_231.asset using Guid(783c6bd7d0e71054a9cf4e35f667ec06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f03091d5bd78f759010aed4ec0fe5e1') in 0.004160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_237.asset
+  artifactKey: Guid(9e8738f533c02be47a3a626e90ddc6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_237.asset using Guid(9e8738f533c02be47a3a626e90ddc6eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89b4b1b1d4148ff9662103af8220ec2') in 0.004506 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_235.asset
+  artifactKey: Guid(7b6de217fca37c349b2c7df07ce06dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_235.asset using Guid(7b6de217fca37c349b2c7df07ce06dbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb9ffd7949863822f04960f0ee6f50e3') in 0.004499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_241.asset
+  artifactKey: Guid(3d2d148ab9b84b9419472bf1dab3be85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_241.asset using Guid(3d2d148ab9b84b9419472bf1dab3be85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a554f4fb6eb17265f8e26efb9eda3c') in 0.003809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_243.asset
+  artifactKey: Guid(ed1dbfb1c35d60d49b6be025db5da8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_243.asset using Guid(ed1dbfb1c35d60d49b6be025db5da8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f542f446ea72c1b9bbecdd572fa0d1') in 0.003705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001454 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_246.asset
+  artifactKey: Guid(68dc3e5eacffb934482959a00b262d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_246.asset using Guid(68dc3e5eacffb934482959a00b262d73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1769a954b6ee2d557a7a31795710f6') in 0.002866 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000984 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_248.asset
+  artifactKey: Guid(2a80d2294623bce4d9e2aaf0c1d76bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_248.asset using Guid(2a80d2294623bce4d9e2aaf0c1d76bc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10b275914fab2d3a4a2eea73ce352e25') in 0.003402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_251.asset
+  artifactKey: Guid(0d6f0898e15752d468d14306547f7bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_251.asset using Guid(0d6f0898e15752d468d14306547f7bda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2baa8852d42ea2d2d4aed2f35a4c4a52') in 0.004438 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001794 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_254.asset
+  artifactKey: Guid(0a837480d9f46d7439247a42e4bad272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_254.asset using Guid(0a837480d9f46d7439247a42e4bad272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84e9493a7eac937969781d6ec478a522') in 0.003160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001155 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_256.asset
+  artifactKey: Guid(fa6c4439f37ab2f46b77df5aba14d05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_256.asset using Guid(fa6c4439f37ab2f46b77df5aba14d05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c792942bb4583ca12c2aa00974e6cc') in 0.003595 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_259.asset
+  artifactKey: Guid(b266c1af2fe5311479aac2382d87ec85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_259.asset using Guid(b266c1af2fe5311479aac2382d87ec85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c3183624d2c3d574e5fe6e82a20c67') in 0.003745 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.018731 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_262.asset
+  artifactKey: Guid(4e50db44122d37548b483d4f1913f14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_262.asset using Guid(4e50db44122d37548b483d4f1913f14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '674d540ca7802258c58f3a20765dae65') in 0.003672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_265.asset
+  artifactKey: Guid(ab0ec1566f86f874ab40ecc7d7194268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_265.asset using Guid(ab0ec1566f86f874ab40ecc7d7194268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '319f56d21b4fcce1ac0d8f531e86e345') in 0.003456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_264.asset
+  artifactKey: Guid(98871307537d27f49aae22c8f2de2b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_264.asset using Guid(98871307537d27f49aae22c8f2de2b0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b9d28d1448f463a8f1093b3e15e152') in 0.004088 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_268.asset
+  artifactKey: Guid(6d8d9d217559654489c280e5f97dc036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_268.asset using Guid(6d8d9d217559654489c280e5f97dc036) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c6ed17b29659304c9426ba2318fa6e') in 0.002831 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.022627 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_272.asset
+  artifactKey: Guid(e396bac9daad5584f89e51637db417a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_272.asset using Guid(e396bac9daad5584f89e51637db417a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '730a3493228411f1919ebc2b04434a7d') in 0.004145 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_276.asset
+  artifactKey: Guid(751a02a80d1faeb478315ab957faccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_276.asset using Guid(751a02a80d1faeb478315ab957faccd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500a0a5f90fec4c5641f9be851f5deec') in 0.003917 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_278.asset
+  artifactKey: Guid(17944d85a4ccbb54a990cf10c7fea374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_278.asset using Guid(17944d85a4ccbb54a990cf10c7fea374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ddbfdfe1cd0407b603fc7571494a25b') in 0.003050 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_275.asset
+  artifactKey: Guid(f21ad158a4ae95c4bab0cc6996d6bf90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_275.asset using Guid(f21ad158a4ae95c4bab0cc6996d6bf90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fddacf184bf1a90372bc5554f7cc7b46') in 0.003972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_274.asset
+  artifactKey: Guid(730f2343761876a438417f0dd337b637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_274.asset using Guid(730f2343761876a438417f0dd337b637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2b01f875880c51dac005b373f1f330') in 0.004747 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_287.asset
+  artifactKey: Guid(3bec713e64468c04886c982cb02f347a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_287.asset using Guid(3bec713e64468c04886c982cb02f347a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad37526a41051ab5c6a6398f09808ed') in 0.004452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_292.asset
+  artifactKey: Guid(1b8309656ffed094e8ddfb7870a57569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_292.asset using Guid(1b8309656ffed094e8ddfb7870a57569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1149397d544908e0a978bb07b2fa5570') in 0.003600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_279.asset
+  artifactKey: Guid(f972f76dadc4f6b489cb48194036a14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_279.asset using Guid(f972f76dadc4f6b489cb48194036a14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f3419f278385a6dce9cedece0350cb') in 0.004465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000789 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_296.asset
+  artifactKey: Guid(5f7da3eb91c4adb488cb624acb752b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_296.asset using Guid(5f7da3eb91c4adb488cb624acb752b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2a50bb83e0672ad5e7aee65aa600315') in 0.002820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003518 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_298.asset
+  artifactKey: Guid(e497944c3e90e5e4883a574f6037e57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_298.asset using Guid(e497944c3e90e5e4883a574f6037e57e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c553c3c729d119d888a469e838e41b0') in 0.003627 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.025649 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_302.asset
+  artifactKey: Guid(9cd0c249bb69b1a419fd270bcfc69ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_302.asset using Guid(9cd0c249bb69b1a419fd270bcfc69ed1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f7c406f278ef68b3a0be515e4e79ff') in 0.004223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_305.asset
+  artifactKey: Guid(8539908d235d4284ab9f885ff635b88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_305.asset using Guid(8539908d235d4284ab9f885ff635b88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9055288f52ece06c75070a8ee1fa80') in 0.003839 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_310.asset
+  artifactKey: Guid(60affc92c0a48c24ea5b9bff6a539557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_310.asset using Guid(60affc92c0a48c24ea5b9bff6a539557) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6418b21d0181bd8b264d4c80e3ed244') in 0.004734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_309.asset
+  artifactKey: Guid(6ec1165a544584c4b922e15111480016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_309.asset using Guid(6ec1165a544584c4b922e15111480016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fbd1aa8bd5d13295e195bb6fb2e41f7') in 0.003653 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.022197 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_312.asset
+  artifactKey: Guid(1beccc0c53f529444b92ed45385957f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_312.asset using Guid(1beccc0c53f529444b92ed45385957f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13a197ce5111e0b1b7318ca32766b5c4') in 0.004025 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_318.asset
+  artifactKey: Guid(08f43723d5f7c8e46a306c54a5c39949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_318.asset using Guid(08f43723d5f7c8e46a306c54a5c39949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e49b05474e92f345e6dbacafaac309e') in 0.003608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_316.asset
+  artifactKey: Guid(2fd350dd66fc4ad4b8f69fbc36f92bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_316.asset using Guid(2fd350dd66fc4ad4b8f69fbc36f92bac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6d0ff0f0e618157db1702571b4966e') in 0.003441 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.066195 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_322.asset
+  artifactKey: Guid(319f5c3ff5f78ab49992be45cc33af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_322.asset using Guid(319f5c3ff5f78ab49992be45cc33af0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bad54621e854ef7be56f4f9fa6e6405') in 0.003715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_324.asset
+  artifactKey: Guid(9a14cc356d2d5a3429ec2ddca67ae61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_324.asset using Guid(9a14cc356d2d5a3429ec2ddca67ae61f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1ae0bf8c6db0f7cfe20d86eab0cd350') in 0.004766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_327.asset
+  artifactKey: Guid(d3709d21137f4ef49b3a12f579bd12cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_327.asset using Guid(d3709d21137f4ef49b3a12f579bd12cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d2231070f849605cfa20210c257ac58') in 0.005462 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.556276 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_332.asset
+  artifactKey: Guid(f78be817c77689e41aafa947c1f078bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_332.asset using Guid(f78be817c77689e41aafa947c1f078bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '639d4bfccbe3088b9ca4dcb49c508f14') in 0.008287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_338.asset
+  artifactKey: Guid(b5236770b011274419f1d7950f8d7c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_338.asset using Guid(b5236770b011274419f1d7950f8d7c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b100ec409109af4cd2d8b5a7c3f31c61') in 0.005551 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000486 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_337.asset
+  artifactKey: Guid(c7440247d3b000044bfddee05d8d34da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_337.asset using Guid(c7440247d3b000044bfddee05d8d34da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e44fe71f16103a58ae1e890a0791cf7') in 0.005005 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.047291 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_342.asset
+  artifactKey: Guid(66f7d524a11b2fe49bb6728117507d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_342.asset using Guid(66f7d524a11b2fe49bb6728117507d8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63076118b73b276629db93075827b434') in 0.006540 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_345.asset
+  artifactKey: Guid(195ac0fac5d9e8d41babebbf9bb6d456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_345.asset using Guid(195ac0fac5d9e8d41babebbf9bb6d456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059d70381541b6f2ae5c5b2e65c7006f') in 0.002828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_347.asset
+  artifactKey: Guid(edec3c28a29c45942ae1a9a48cd01a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_347.asset using Guid(edec3c28a29c45942ae1a9a48cd01a31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053371f909d1e94fcc12c4a1aa0dad60') in 0.002836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.050081 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_352.asset
+  artifactKey: Guid(224b42c68b6b5d24395c958326f792ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_352.asset using Guid(224b42c68b6b5d24395c958326f792ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb8826b558ae49cfe3940db548618d6') in 0.004103 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_357.asset
+  artifactKey: Guid(bb0c97b6973091c4cb5aad7ad564e385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_357.asset using Guid(bb0c97b6973091c4cb5aad7ad564e385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd32368f7d211281ef2eb19ac7146fec') in 0.004151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_354.asset
+  artifactKey: Guid(bca0f9b49b74fcc48840ae6b0fb4de0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_354.asset using Guid(bca0f9b49b74fcc48840ae6b0fb4de0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8056657bb76d30d2e669fdd050a754') in 0.005583 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.047160 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_362.asset
+  artifactKey: Guid(6ed7b83d67857dc45ba07d8eaf6abc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_362.asset using Guid(6ed7b83d67857dc45ba07d8eaf6abc6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac78720e44bcf8ff04036f4cc612d36') in 0.003928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_366.asset
+  artifactKey: Guid(ff3f17a0168293240ab4d101369b3f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_366.asset using Guid(ff3f17a0168293240ab4d101369b3f07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '064ae0f13a585de66ab9dc260a2a3daa') in 0.005820 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_365.asset
+  artifactKey: Guid(e9365f597312ab44481903287c7ac9ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_365.asset using Guid(e9365f597312ab44481903287c7ac9ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b07187ac452e16eff7b22b6f89eb2930') in 0.004405 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.056054 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_372.asset
+  artifactKey: Guid(97967ed05a49b4d41a4486704a01f41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_372.asset using Guid(97967ed05a49b4d41a4486704a01f41d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '834193108be755584f04587f30d4f988') in 0.004043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_374.asset
+  artifactKey: Guid(1639bdcd9165dd643820f76121ad62f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_374.asset using Guid(1639bdcd9165dd643820f76121ad62f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67f64fd1aa3fbf111acfdccc1a92a169') in 0.004369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_377.asset
+  artifactKey: Guid(1e96fabaad5c89b49b179e93d8b3c34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_377.asset using Guid(1e96fabaad5c89b49b179e93d8b3c34d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b723ee4b36809453eb0c8ed9166ef77d') in 0.004783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.089123 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_382.asset
+  artifactKey: Guid(63324ef0b450c754897ba757c5dd81b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_382.asset using Guid(63324ef0b450c754897ba757c5dd81b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40a63f3ea164dd178edd3faf0d98d0e8') in 0.005293 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_385.asset
+  artifactKey: Guid(8816728def1902d4f944527f43de674c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_385.asset using Guid(8816728def1902d4f944527f43de674c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54121fe8cbb50ae046cb77b13a470662') in 0.004174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_387.asset
+  artifactKey: Guid(98905e2c6ac6ab647a420dc3324b5a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_387.asset using Guid(98905e2c6ac6ab647a420dc3324b5a80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc4f07d57bd7e4a076ae1a4a9ae3a90b') in 0.004321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.102914 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_392.asset
+  artifactKey: Guid(8670fdfe10be03a42b22273a575c944d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_392.asset using Guid(8670fdfe10be03a42b22273a575c944d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7df7264522150399017546ce623629c') in 0.004404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_399.asset
+  artifactKey: Guid(48e0bb47d8b617f4aa513b9cbe91c45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_399.asset using Guid(48e0bb47d8b617f4aa513b9cbe91c45d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9062c8f353e1254ffb1fe9a35f48d6ed') in 0.003920 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_395.asset
+  artifactKey: Guid(da90fa3412f78a142ac939ba37d9d56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_395.asset using Guid(da90fa3412f78a142ac939ba37d9d56c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff5b3d667c35ac45243d01393a3fe5ef') in 0.004869 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.040687 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_402.asset
+  artifactKey: Guid(4a615f185c88f304cb99d3468bfc3cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_402.asset using Guid(4a615f185c88f304cb99d3468bfc3cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de92955062385b9de81e1c2c9a1ae329') in 0.004409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_405.asset
+  artifactKey: Guid(0ab34076f9ff0b445b664722eec17547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_405.asset using Guid(0ab34076f9ff0b445b664722eec17547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '742812c9aeb5a45485448f4e0a986a05') in 0.004882 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_408.asset
+  artifactKey: Guid(d612a1f08df9cf54a8364d7d27c72216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_408.asset using Guid(d612a1f08df9cf54a8364d7d27c72216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b16d889c8249efe122c9855850f5ae5') in 0.003227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.006247 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_411.asset
+  artifactKey: Guid(685c8ee4e3621384081e490386699ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_411.asset using Guid(685c8ee4e3621384081e490386699ca1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '865c69457c86c20c843f42de45082891') in 0.002986 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_414.asset
+  artifactKey: Guid(d874bbc5c89bd244593131551133b2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_414.asset using Guid(d874bbc5c89bd244593131551133b2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e26f104850cc7e675bd544035c329ef') in 0.002913 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001098 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_416.asset
+  artifactKey: Guid(c92273c1bac4a6547b3d3be5a1ad3eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_416.asset using Guid(c92273c1bac4a6547b3d3be5a1ad3eb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44fcc76f2e7dc5129966af2262efb55a') in 0.003149 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.003198 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_418.asset
+  artifactKey: Guid(8e373404be96e10429aff70f6335cd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_418.asset using Guid(8e373404be96e10429aff70f6335cd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5a63dda3ba00d1fe3ffa3d2a8222f64') in 0.003320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_421.asset
+  artifactKey: Guid(e2e65c6d782e6544eaffdce3768c822f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_421.asset using Guid(e2e65c6d782e6544eaffdce3768c822f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '960417238d973121ff581c2840fd76d6') in 0.003130 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000511 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_423.asset
+  artifactKey: Guid(cbabde28d870ac64486654eb92444692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_423.asset using Guid(cbabde28d870ac64486654eb92444692) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec9f621d7993ddb34573631d44d70a3f') in 0.002784 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002087 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_425.asset
+  artifactKey: Guid(42094db132963ef4483278dfc34551a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_425.asset using Guid(42094db132963ef4483278dfc34551a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf8667f5f4c67f4c98ef23016e233ef') in 0.003630 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_428.asset
+  artifactKey: Guid(fde6c88e4fb8d4147bfe510a4a6ea43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_428.asset using Guid(fde6c88e4fb8d4147bfe510a4a6ea43d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c29cab477ab6673b48cfc2bd0e06597') in 0.003086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.031964 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_432.asset
+  artifactKey: Guid(5b798d1861e78504887fab1f4c5ebb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_432.asset using Guid(5b798d1861e78504887fab1f4c5ebb01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50c074fa008254fd7424fc8901248fea') in 0.002873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_434.asset
+  artifactKey: Guid(5bf75b1b843cf5f4fa4d295a37f7f004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_434.asset using Guid(5bf75b1b843cf5f4fa4d295a37f7f004) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c234e66bef31396452ac8d6504dd4877') in 0.004314 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002683 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_438.asset
+  artifactKey: Guid(adfa4e9ebd028d54bbded4e885aef7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_438.asset using Guid(adfa4e9ebd028d54bbded4e885aef7b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5ddc825b1a1f0ea09e130383532ea4') in 0.003256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.002935 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_440.asset
+  artifactKey: Guid(86eb236ba9443944c97918feb04773c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_440.asset using Guid(86eb236ba9443944c97918feb04773c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4345dd9a9608a95c22964514296c06f7') in 0.004119 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.039140 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_461.asset
+  artifactKey: Guid(11220b84741efaa4bb5996c108adb253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_461.asset using Guid(11220b84741efaa4bb5996c108adb253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ad949a1638be98051a840a48afa57a') in 0.003515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_465.asset
+  artifactKey: Guid(0ccc91b11f7267a44bd5c8c0fd386dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_465.asset using Guid(0ccc91b11f7267a44bd5c8c0fd386dbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b33dc130d5dac8a3f9c1769ebb7eff') in 0.002724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001034 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_467.asset
+  artifactKey: Guid(9a9c68f59a9b6bc428252b9eab38ace2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_467.asset using Guid(9a9c68f59a9b6bc428252b9eab38ace2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42226e79a84225ad66cc77cd23738b02') in 0.003454 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000681 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_469.asset
+  artifactKey: Guid(3b3f1bb3b9dc93143a4b9caa8a073fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_469.asset using Guid(3b3f1bb3b9dc93143a4b9caa8a073fc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b40b744ef0ff062a1dc249f4ef99be29') in 0.002705 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_471.asset
+  artifactKey: Guid(8da9ed69ee21e654fb0cd5583521b5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_471.asset using Guid(8da9ed69ee21e654fb0cd5583521b5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8595316092dfe2c07156f09ccc8dc70') in 0.002693 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000715 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_474.asset
+  artifactKey: Guid(17f2e4ac26fba6d45a8cad91b79e6272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_474.asset using Guid(17f2e4ac26fba6d45a8cad91b79e6272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02124343052e1313173cac58fa3bb94f') in 0.003228 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_476.asset
+  artifactKey: Guid(03899cd23bf2d4c489b33436df140ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_476.asset using Guid(03899cd23bf2d4c489b33436df140ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c5ad1d92c8f56022434be91e7baf55') in 0.002864 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.001011 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_478.asset
+  artifactKey: Guid(cb386704c06b470489fb9560608d3950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_478.asset using Guid(cb386704c06b470489fb9560608d3950) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '057a94a3d35476eacb870c67c555f9c9') in 0.002409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_480.asset
+  artifactKey: Guid(0dd0897a115bc1d4289b56a879c1f7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_480.asset using Guid(0dd0897a115bc1d4289b56a879c1f7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9b4cac08d65a27b7e2a2de7632379a7') in 0.003013 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_483.asset
+  artifactKey: Guid(0470a2681e0ac90458a10b36ef5b5b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_483.asset using Guid(0470a2681e0ac90458a10b36ef5b5b0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2d7dc392c46dc580f1d0bf06a7b0bba') in 0.003489 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.296479 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_450.asset
+  artifactKey: Guid(686da01708847ee43a574a7f298b473b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_450.asset using Guid(686da01708847ee43a574a7f298b473b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f059c8f765a1c8e54200c409683afc5') in 0.004041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_457.asset
+  artifactKey: Guid(b56b174e436c8ad48bc4dc2220de5f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_457.asset using Guid(b56b174e436c8ad48bc4dc2220de5f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24d9e590e619906f9332b0648bf0837') in 0.004707 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_455.asset
+  artifactKey: Guid(5e2803d09c10b4349bf85eb737ad0ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_455.asset using Guid(5e2803d09c10b4349bf85eb737ad0ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38421b9640666b6c6eceecc541217c90') in 0.004213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_459.asset
+  artifactKey: Guid(afed08ecc114f044c8a2e0c63fe276a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_459.asset using Guid(afed08ecc114f044c8a2e0c63fe276a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1625d84d8303fd8c77eadf02b97fa26d') in 0.005015 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/배경/타일/KakaoTalk_20231211_080232401_453.asset
+  artifactKey: Guid(361675a7e19401e4e885860078ebf778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/배경/타일/KakaoTalk_20231211_080232401_453.asset using Guid(361675a7e19401e4e885860078ebf778) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6a3ee89b84429900a16be7b359024a0') in 0.005414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ������ ���� �Ǵ� ���� ���α׷� ��û ������ I/O �۾��� ��ҵǾ����ϴ�.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
