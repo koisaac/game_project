@@ -100,6 +100,77 @@ public class player : MonoBehaviour
 
     }
 
+    private bool check_can_move(int x)
+    {
+        bool can_move = true;
+        int dic_x,dic_y;
+        switch (x)
+        {
+            case 1: //down
+                dic_x = 0;
+                dic_y = -1;
+                break;
+            case 2://up
+                dic_x = 0;
+                dic_y = 1;
+                break;
+            case 3://right
+                dic_x = 1;
+                dic_y = 0;
+                break;
+            case 4://left
+                dic_x = -1;
+                dic_y = 0;
+                break;
+            default:
+                Debug.LogError("aaaaaaaa");
+                return false;
+        }
+
+
+        if(dic_x == 0)
+        {
+            if(Current_panel_position.y*dic_y + (14.52f ) >  dic_y*min_bound.y)
+            {
+                can_move = false;
+            }
+        }
+        else if(dic_y == 0)
+        {
+            if (Current_panel_position.x * dic_x + (14.52f) > dic_x * min_bound.x)
+            {
+                can_move = false;
+            }
+        }
+
+        return can_move;
+
+
+
+    }
+
+    private bool check_can_move_down()
+    {
+        return check_can_move(1);
+    }
+
+
+    private bool check_can_move_up()
+    {
+        return check_can_move(2);
+    }
+
+
+    private bool check_can_move_right()
+    {
+        return check_can_move(3);
+    }
+    private bool check_can_move_left()
+    {
+        return check_can_move(4);
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -152,7 +223,7 @@ public class player : MonoBehaviour
                             Current_panel_position = move_panels.Panels[move_panels.Panels.Count - 1].transform.position;
 
                         }
-                        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+                        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) //move down
                         {
                             if (Current_panel_position.y - 14.52 < min_bound.y)
                             {
@@ -166,7 +237,7 @@ public class player : MonoBehaviour
                             is_panel_move_end = false;
                             time = 0;
                         }
-                        else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+                        else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //move up
                         {
                             if (Current_panel_position.y + 14.52 > max_bound.y)
                             {
@@ -179,7 +250,7 @@ public class player : MonoBehaviour
                             is_panel_move_end = false;
                             time = 0;
                         }
-                        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+                        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //move_right
                         {
                             if (Current_panel_position.x + 14.52 > max_bound.x)
                             {
@@ -193,15 +264,15 @@ public class player : MonoBehaviour
                             is_panel_move_end = false;
                             time = 0;
                         }
-                        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+                        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //move_left
                         {
-                            if (Current_panel_position.x - 14.52 < min_bound.x)
+                            if (check_can_move_left())
                             {
-
+                                check_move = !move_panels.MoveLeft(check_move);
                             }
                             else
                             {
-                                check_move = !move_panels.MoveLeft(check_move);
+                                
 
                             }
                             is_panel_move_end = false;
