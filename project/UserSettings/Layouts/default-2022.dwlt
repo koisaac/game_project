@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 135
+  controlID: 41
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,7 +187,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 314.4
+    width: 313.6
     height: 425.6
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
@@ -211,9 +211,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 314.4
+    x: 313.6
     y: 0
-    width: 703.19995
+    width: 704
     height: 425.6
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 55
+  controlID: 103
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -384,7 +384,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73.6
-    width: 313.4
+    width: 312.6
     height: 404.6
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 10fbffff9a61000000620000
+      m_ExpandedIDs: 10fbffff9a6100002262000028620000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -445,9 +445,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 314.4
+    x: 313.6
     y: 73.6
-    width: 701.19995
+    width: 702
     height: 404.6
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -775,9 +775,9 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: -430.39996, y: -394.40002}
+      snapOffset: {x: 272.00006, y: 10.399963}
       snapOffsetDelta: {x: 0, y: 0}
-      snapCorner: 3
+      snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
       index: 11
       layout: 4
@@ -794,9 +794,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 188.88257, y: 24.91555, z: 90.44237}
+    m_Target: {x: 34.30276, y: 52.759323, z: 425.85645}
     speed: 2
-    m_Value: {x: 188.88257, y: 24.91555, z: 90.44237}
+    m_Value: {x: 34.32817, y: 50.899353, z: 412.41238}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -846,9 +846,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 130.42317
+    m_Target: 111.64004
     speed: 2
-    m_Value: 130.42317
+    m_Value: 106.83257
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -927,9 +927,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 314.4
+    x: 313.6
     y: 73.6
-    width: 701.19995
+    width: 702
     height: 404.6
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -985,23 +985,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 701.19995
+      width: 702
       height: 383.6
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 350.59998, y: 191.8}
+    m_Translation: {x: 351, y: 191.8}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -350.59998
+      x: -351
       y: -191.8
-      width: 701.19995
+      width: 702
       height: 383.6
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 876.49994, y: 505.75}
+  m_LastWindowPixelSize: {x: 877.5, y: 505.75}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -1052,7 +1052,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Manager
+    - Assets/ui/prefab
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1060,15 +1060,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Manager
+  - Assets/ui/prefab
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\HP\Desktop\game_project\project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 12.600037}
-    m_SelectedIDs: f8620000
-    m_LastClickedID: 25336
+    m_SelectedIDs: 06630000
+    m_LastClickedID: 25350
     m_ExpandedIDs: 00000000c2620000c4620000c6620000c8620000ca620000cc620000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1152,7 +1152,7 @@ MonoBehaviour:
     m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 50
+  m_DirectoriesAreaWidth: 254
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
