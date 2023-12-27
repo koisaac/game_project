@@ -210,7 +210,7 @@ public class player : MonoBehaviour
                             }
                             else
                             {
-
+                                MainCameraManager.Instance.shake_down();
                             }
                             is_panel_move_end = false;
                             time = 0;
@@ -225,6 +225,7 @@ public class player : MonoBehaviour
                             }
                             else
                             {
+                                MainCameraManager.Instance.shake_up();
                             }
                             is_panel_move_end = false;
                             time = 0;
@@ -238,7 +239,7 @@ public class player : MonoBehaviour
                             }
                             else
                             {
-
+                                MainCameraManager.Instance.shake_right();
                             }
 
                             is_panel_move_end = false;
@@ -253,7 +254,7 @@ public class player : MonoBehaviour
                             }
                             else
                             {
-                                
+                                MainCameraManager.Instance.shake_left();
 
                             }
                             is_panel_move_end = false;

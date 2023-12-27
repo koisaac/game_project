@@ -5,6 +5,8 @@ using UnityEngine;
 public class MainCameraManager : MonoBehaviour
 {
 
+    private static MainCameraManager instance;
+
     private Vector3 max_bound;
     private Vector3 min_bound;
     private float camera_width;
@@ -14,9 +16,39 @@ public class MainCameraManager : MonoBehaviour
     private float move_x;
     private float move_y;
 
+    public float shake_degree;
+
+    public static MainCameraManager Instance { get => instance;  }
+
+    void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
     public void shake_left()
     {
-
+        transform.Translate(new Vector3(-shake_degree, 0, 0));
+    }
+    public void shake_right()
+    {
+        transform.Translate(new Vector3(shake_degree, 0, 0));
+    }
+    public void shake_up()
+    {
+        transform.Translate(new Vector3(0, shake_degree, 0));
+    }
+    public void shake_down()
+    {
+        transform.Translate(new Vector3(0, -shake_degree, 0));
     }
     // Start is called before the first frame update
     void Start()
@@ -53,7 +85,7 @@ public class MainCameraManager : MonoBehaviour
         Vector3 target_postion = new Vector3(move_x, move_y, this.transform.position.z);
 
 
-        transform.position = Vector3.Lerp(transform.position, target_postion, 0.04f);
+        transform.position = Vector3.Lerp(transform.position, target_postion, 0.03f);
 
 
 
