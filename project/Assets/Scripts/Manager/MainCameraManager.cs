@@ -15,7 +15,10 @@ public class MainCameraManager : MonoBehaviour
     private float move_x;
     private float move_y;
 
+    public void shake_left()
+    {
 
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -25,22 +28,24 @@ public class MainCameraManager : MonoBehaviour
 
     }
 
+
     // Update is called once per frame
     void Update()
     {
-        
+        bound = GameManager.Instance().getbound();
 
-        
+
         max_bound = bound.bounds.max;
         min_bound = bound.bounds.min;
 
        
 
         move_x = Mathf.Clamp(player.transform.position.x, min_bound.x+camera_width-28, max_bound.x-camera_width+28);
-        move_y = Mathf.Clamp(player.transform.position.y-9, min_bound.y+camera_height-16, max_bound.y-camera_height);
+        move_y = Mathf.Clamp(player.transform.position.y, min_bound.y+camera_height - 37, max_bound.y-camera_height);
 
 
         Vector3 target_postion=new Vector3(move_x,move_y,this.transform.position.z) ;
-        transform.position = Vector3.Lerp(transform.position, target_postion, 0.05f);
+
+        transform.position = Vector3.MoveTowards(transform.position, target_postion, 0.3f);
     }  
 }

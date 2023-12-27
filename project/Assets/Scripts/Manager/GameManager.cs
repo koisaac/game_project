@@ -40,7 +40,8 @@ public class GameManager : MonoBehaviour
         return player_turn;
     }
     public void turn_end() {
-        button_script.GetComponent<Activate>().click_move_false();
+        button_script.GetComponent<Activate>().click_attack_false();
+   
         player_turn = !player_turn;
     }
 
