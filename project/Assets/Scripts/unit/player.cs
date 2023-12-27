@@ -60,6 +60,7 @@ public class player : MonoBehaviour
 
     public bool Is_moving { get => is_moving; }
     public bool Is_player_move { get => is_player_move; }
+    public move_controller Move_panels { get => move_panels;}
 
     private Vector2 origin_postion;
     private void End()
@@ -242,7 +243,7 @@ public class player : MonoBehaviour
 
                     Vector2 target = move_panels.Panels[0].transform.position;
 
-                    transform.position = Vector3.MoveTowards(transform.position, target, 0.4f);
+                    transform.position = Vector3.MoveTowards(transform.position, target, 0.8f);
 
 
                     move_panels.transform.position = origin_postion;

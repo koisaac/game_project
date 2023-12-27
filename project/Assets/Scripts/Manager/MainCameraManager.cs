@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class MainCameraManager : MonoBehaviour
 {
-    public GameObject player;
 
     private Vector3 max_bound;
     private Vector3 min_bound;
@@ -24,7 +23,7 @@ public class MainCameraManager : MonoBehaviour
     {
         bound = GameManager.Instance().getbound();
         camera_height = Camera.main.orthographicSize;
-        camera_width = camera_height*Screen.width/Screen.height;
+        camera_width = camera_height * Screen.width / Screen.height;
 
     }
 
@@ -32,20 +31,31 @@ public class MainCameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector3 target = player.Instance().transform.position;
+        if (player.Instance().Is_moving && !player.Instance().Is_player_move)
+        {
+            move_controller Move_Controller = player.Instance().Move_panels;
+            if (Move_Controller.Panels.Count != 0)
+            {
+                target = Move_Controller.Panels[Move_Controller.Panels.Count - 1].transform.position;
+
+            }
+        }
+
         bound = GameManager.Instance().getbound();
 
 
         max_bound = bound.bounds.max;
         min_bound = bound.bounds.min;
 
-       
+        move_x = Mathf.Clamp(target.x, min_bound.x + camera_width - 43, max_bound.x - camera_width + 43);
+        move_y = Mathf.Clamp(target.y, min_bound.y + camera_height - 34.2f, max_bound.y - camera_height);
+        Vector3 target_postion = new Vector3(move_x, move_y, this.transform.position.z);
 
-        move_x = Mathf.Clamp(player.transform.position.x, min_bound.x+camera_width-44, max_bound.x-camera_width+44);
-        move_y = Mathf.Clamp(player.transform.position.y, min_bound.y+camera_height-47, max_bound.y-camera_height);
+
+        transform.position = Vector3.Lerp(transform.position, target_postion, 0.04f);
 
 
-        Vector3 target_postion=new Vector3(move_x,move_y,this.transform.position.z) ;
 
-        transform.position = Vector3.MoveTowards(transform.position, target_postion, 0.3f);
-    }  
+    }
 }
