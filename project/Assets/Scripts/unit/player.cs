@@ -100,44 +100,21 @@ public class player : MonoBehaviour
 
     }
 
-    private bool check_can_move(int x)
+    private bool check_can_move(Vector3 bound,int dic_x,int dic_y)
     {
         bool can_move = true;
-        int dic_x,dic_y;
-        switch (x)
-        {
-            case 1: //down
-                dic_x = 0;
-                dic_y = -1;
-                break;
-            case 2://up
-                dic_x = 0;
-                dic_y = 1;
-                break;
-            case 3://right
-                dic_x = 1;
-                dic_y = 0;
-                break;
-            case 4://left
-                dic_x = -1;
-                dic_y = 0;
-                break;
-            default:
-                Debug.LogError("aaaaaaaa");
-                return false;
-        }
 
 
         if(dic_x == 0)
         {
-            if(Current_panel_position.y*dic_y + (14.52f ) >  dic_y*min_bound.y)
+            if(Current_panel_position.y*dic_y + (14.52f ) >  dic_y* bound.y)
             {
                 can_move = false;
             }
         }
         else if(dic_y == 0)
         {
-            if (Current_panel_position.x * dic_x + (14.52f) > dic_x * min_bound.x)
+            if (Current_panel_position.x * dic_x + (14.52f) > dic_x * bound.x)
             {
                 can_move = false;
             }
@@ -151,23 +128,24 @@ public class player : MonoBehaviour
 
     private bool check_can_move_down()
     {
-        return check_can_move(1);
+        return check_can_move(min_bound,0,-1);
     }
 
 
     private bool check_can_move_up()
     {
-        return check_can_move(2);
+        return check_can_move(max_bound,0,1);
     }
 
 
     private bool check_can_move_right()
     {
-        return check_can_move(3);
+        return check_can_move(max_bound,1,0);
     }
+
     private bool check_can_move_left()
     {
-        return check_can_move(4);
+        return check_can_move(min_bound, -1, 0);
     }
 
 
@@ -221,17 +199,17 @@ public class player : MonoBehaviour
                         else
                         {
                             Current_panel_position = move_panels.Panels[move_panels.Panels.Count - 1].transform.position;
-
                         }
                         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) //move down
                         {
-                            if (Current_panel_position.y - 14.52 < min_bound.y)
+                            Debug.Log(check_can_move_down());
+                            if (check_can_move_down())
                             {
 
+                                check_move = !move_panels.MoveDown(check_move);
                             }
                             else
                             {
-                                check_move = !move_panels.MoveDown(check_move);
 
                             }
                             is_panel_move_end = false;
@@ -239,26 +217,28 @@ public class player : MonoBehaviour
                         }
                         else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //move up
                         {
-                            if (Current_panel_position.y + 14.52 > max_bound.y)
+                            Debug.Log(check_can_move_up());
+                            if (check_can_move_up())
                             {
 
+                                check_move = !move_panels.MoveUp(check_move);
                             }
                             else
                             {
-                                check_move = !move_panels.MoveUp(check_move);
                             }
                             is_panel_move_end = false;
                             time = 0;
                         }
                         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //move_right
                         {
-                            if (Current_panel_position.x + 14.52 > max_bound.x)
+                            Debug.Log(check_can_move_right());
+                            if (check_can_move_right())
                             {
-
+                                check_move = !move_panels.MoveRight(check_move);
                             }
                             else
                             {
-                                check_move = !move_panels.MoveRight(check_move);
+
                             }
 
                             is_panel_move_end = false;
@@ -266,6 +246,7 @@ public class player : MonoBehaviour
                         }
                         else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //move_left
                         {
+                            Debug.Log(check_can_move_left());
                             if (check_can_move_left())
                             {
                                 check_move = !move_panels.MoveLeft(check_move);
