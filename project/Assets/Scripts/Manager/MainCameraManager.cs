@@ -40,8 +40,8 @@ public class MainCameraManager : MonoBehaviour
 
        
 
-        move_x = Mathf.Clamp(player.transform.position.x, min_bound.x+camera_width-28, max_bound.x-camera_width+28);
-        move_y = Mathf.Clamp(player.transform.position.y, min_bound.y+camera_height - 37, max_bound.y-camera_height);
+        move_x = Mathf.Clamp(player.transform.position.x, min_bound.x+camera_width-44, max_bound.x-camera_width+44);
+        move_y = Mathf.Clamp(player.transform.position.y, min_bound.y+camera_height-47, max_bound.y-camera_height);
 
 
         Vector3 target_postion=new Vector3(move_x,move_y,this.transform.position.z) ;
