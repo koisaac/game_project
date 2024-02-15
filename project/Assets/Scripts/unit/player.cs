@@ -5,6 +5,14 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+    private int unit_number;
+    public void SetUnitNumber(int unit_number)
+    {
+        this.unit_number = unit_number;
+    }
+
+    public int unit_spped;
+
     public int move_speed;
 
     const int move_range_size = 3;
@@ -177,7 +185,7 @@ public class player : MonoBehaviour
         {
             if (check)
             {
-                Debug.Log("start");
+                Debug.Log("player_turn, turn : "+GameManager.Instance().Number_of_turns_performed.ToString());
                 check_move = true;
                 check = false;
             }
@@ -217,7 +225,6 @@ public class player : MonoBehaviour
                         }
                         else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //move up
                         {
-                            Debug.Log(check_can_move_up());
                             if (check_can_move_up())
                             {
 
@@ -232,7 +239,6 @@ public class player : MonoBehaviour
                         }
                         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //move_right
                         {
-                            Debug.Log(check_can_move_right());
                             if (check_can_move_right())
                             {
                                 check_move = !move_panels.MoveRight(check_move);
@@ -284,7 +290,6 @@ public class player : MonoBehaviour
 
                     if (Input.GetKey(KeyCode.F) && move_panels.Panels.Count > 0)
                     {
-                        Debug.Log("a");
                         move_panels.ReplacePaneltoEndPoint();
                         is_player_move = true;
                     }
@@ -308,6 +313,7 @@ public class player : MonoBehaviour
                     }
                     if (move_panels.Panels.Count == 0)
                     {
+                        GameManager.Instance().turn_end();
                         EndMove();
                     }
                 }

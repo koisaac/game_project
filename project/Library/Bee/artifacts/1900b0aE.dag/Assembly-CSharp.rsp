@@ -379,6 +379,7 @@
 "Assets/Scripts/button/attack.cs"
 "Assets/Scripts/button/move.cs"
 "Assets/Scripts/button/move_scenes.cs"
+"Assets/Scripts/Manager/enemys_manager.cs"
 "Assets/Scripts/Manager/GameManager.cs"
 "Assets/Scripts/Manager/MainCameraManager.cs"
 "Assets/Scripts/UI/move_controller.cs"
