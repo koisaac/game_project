@@ -20,7 +20,7 @@ public class set_player_attack_sets : MonoBehaviour
         for (int i = 0; i < childcount; i++)
         {
             Transform @object = transform.GetChild(i);
-            if (Are_the_coordinates_within_range(@object.position, GameManager.Instance().getbound()))
+            if (Are_the_coordinates_within_range(@object.position, GameManager.Instance.getbound()))
             {
                 @object.gameObject.SetActive(true);
             }
@@ -55,7 +55,7 @@ public class set_player_attack_sets : MonoBehaviour
 
     public void set_player_attack_set(int move_range)
     {
-        BoxCollider2D bound = GameManager.Instance().getbound();
+        BoxCollider2D bound = GameManager.Instance.getbound();
         for (int i = 0; i < move_range; i++)
         {
             for (int j = -i;j<=i;j++)

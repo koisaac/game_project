@@ -16,21 +16,21 @@ public class Activate : MonoBehaviour
     {
         if (!click_attack)
         {
-            player.Instance().transform.Find("attack_panels").GetComponent<set_player_attack_sets>().activate_attack_set();
+            player.            Instance.transform.Find("attack_panels").GetComponent<set_player_attack_sets>().activate_attack_set();
             click_attack = true;
         }
 
     }
     public void move()
     {
-        if(!player.Instance().Is_moving)
+        if(!player.Instance.Is_moving)
         {
-            player.Instance().StartMove();
+            player.            Instance.StartMove();
             gameObject.transform.Find("버튼").transform.Find("이동 버튼").transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "취소";
         }
         else
         {
-            player.Instance().EndMove();
+            player.            Instance.EndMove();
             gameObject.transform.Find("버튼").transform.Find("이동 버튼").transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "이동";
 
         }
@@ -45,7 +45,7 @@ public class Activate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.Instance().Is_moving)
+        if (player.Instance.Is_moving)
         {
             gameObject.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "취소";
         }

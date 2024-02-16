@@ -19,8 +19,8 @@ public class GameManager : MonoBehaviour
 
 
     private void Awake()
-    {   
-        if(instance == null)
+    {
+        if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject);
@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-  
+
     }
 
 
@@ -44,9 +44,6 @@ public class GameManager : MonoBehaviour
         return bounds[map_number];
     }
 
-    public static GameManager Instance()
-    {
-        return instance;
-    }
+    public static GameManager Instance {get=> instance;}
 
 }

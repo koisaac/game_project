@@ -208,7 +208,7 @@ public class move_controller : MonoBehaviour
 
             if (move_panel_infos.Count == 1)
             {
-                player.Instance().EndMove();
+                player.                Instance.EndMove();
                 return false;
             }
         }

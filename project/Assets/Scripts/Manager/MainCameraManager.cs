@@ -53,7 +53,7 @@ public class MainCameraManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bound = GameManager.Instance().getbound();
+        bound = GameManager.Instance.getbound();
         camera_height = Camera.main.orthographicSize;
         camera_width = camera_height * Screen.width / Screen.height;
 
@@ -63,10 +63,10 @@ public class MainCameraManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 target = player.Instance().transform.position;
-        if (player.Instance().Is_moving && !player.Instance().Is_player_move)
+        Vector3 target = player.Instance.transform.position;
+        if (player.Instance.Is_moving && !player.Instance.Is_player_move)
         {
-            move_controller Move_Controller = player.Instance().Move_panels;
+            move_controller Move_Controller = player.Instance.Move_panels;
             if (Move_Controller.Panels.Count != 0)
             {
                 target = Move_Controller.Panels[Move_Controller.Panels.Count - 1].transform.position;
@@ -74,7 +74,7 @@ public class MainCameraManager : MonoBehaviour
             }
         }
 
-        bound = GameManager.Instance().getbound();
+        bound = GameManager.Instance.getbound();
 
 
         max_bound = bound.bounds.max;

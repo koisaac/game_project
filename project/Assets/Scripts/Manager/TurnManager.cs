@@ -13,6 +13,7 @@ public class TurnManager : MonoBehaviour
     private List<int> unit_action_state;
     private int unit_speed_Total_product;
     private List<int> unit_action_procedure;
+    private List<GameObject> unit;
     private player Player;
     private GameObject Enemys;
     private int this_turn;
@@ -26,6 +27,11 @@ public class TurnManager : MonoBehaviour
 
     public int Number_of_turns_performed { get => number_of_turns_performed; }
     public int Show_action_number { get => show_action_number;}
+    public static TurnManager Instance { get => instance;}
+    public List<int> Unit_speed { get => unit_speed;}
+    public int Unit_speed_Total_product { get => unit_speed_Total_product;}
+    public List<GameObject> Unit { get => unit;}
+    public List<int> Unit_action_procedure { get => unit_action_procedure;}
 
     void Awake()
     {
@@ -80,24 +86,30 @@ public class TurnManager : MonoBehaviour
 
     private void InitUnitSpeed()
     {
+        unit = new List<GameObject>();
         unit_speed = new List<int>();
         unit_action_state = new List<int>();
         unit_speed_Total_product = 1;
         show_action_number = 0;
 
         Player.SetUnitNumber(0);
+
         unit_speed.Add(Player.unit_spped);
+        unit.Add(Player.gameObject);
+
         unit_speed_Total_product *= Player.unit_spped;
         show_action_number += Player.unit_spped - 1;
         for (int i = 0; i < Enemys.transform.childCount; i++)
         {
             enemy Enemy = Enemys.transform.GetChild(i).GetComponent<enemy>();
             Enemy.SetUnitNumber(1 + i);
+
             unit_speed.Add(Enemy.unit_spped);
+            unit.Add(Enemy.gameObject);
+
             unit_speed_Total_product *= Enemy.unit_spped;
             show_action_number += Enemy.unit_spped - 1;
         }
-        show_action_number++;
         for (int i = 0; i < unit_speed.Count; i++)
         {
             unit_speed[i] = unit_speed_Total_product / unit_speed[i];
@@ -129,36 +141,33 @@ public class TurnManager : MonoBehaviour
         number_of_turns_performed++;
         this_turn = unit_action_procedure[0];
 
-
         string s = "";
         foreach (var i in unit_action_procedure)
         {
             s += i.ToString() + ",";
         }
+  
 
 
         if (unit_action_procedure[0] == player_turn) s += "player turn";
         else if (unit_action_procedure[0] == round_end) s += "turn end";
         else if (unit_action_procedure[0] == error_number) s += "erro";
         else s += "enemy turn";
-        Debug.Log(s);
+        Debug.Log(s);     
+        turn_bar_manager.Instance.init();
     }
 
 
 
     void Start()
     {
-        this.Player = player.Instance();
-        this.Enemys = enemys_manager.Instance().gameObject;
+        this.Player = player.Instance;
+        this.Enemys = enemys_manager.Instance.gameObject;
 
         InitTurnSysterm();
 
     }
 
-    public static TurnManager Instance()
-    {
-        return instance;
-    }
     public bool Is_this_unit_turn(int unit_number)
     {
         return (this_turn == unit_number);

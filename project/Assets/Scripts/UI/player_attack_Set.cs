@@ -8,7 +8,7 @@ public class player_attack_Set : MonoBehaviour
     void OnMouseDown()
     {
         Debug.Log(transform.name);
-        player player_instance=player.Instance();
+        player player_instance=player.Instance;
         
         GameObject a = Instantiate(prefab);
         a.transform.position=transform.position;

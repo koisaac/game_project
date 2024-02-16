@@ -15,10 +15,7 @@ public class enemys_manager : MonoBehaviour
         }
         else Destroy(this.gameObject);
     }
-    public static enemys_manager Instance()
-    {
-        return instance;
-    }
+    public static enemys_manager Instance { get => instance; }
 
 
     // Start is called before the first frame update

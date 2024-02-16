@@ -32,10 +32,7 @@ public class player : MonoBehaviour
     }
 
 
-    public static player Instance()
-    {
-        return Player;
-    }
+    public static player Instance { get => Player; }
 
 
 
@@ -181,11 +178,11 @@ public class player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (TurnManager.Instance().Is_player_turn())
+        if (TurnManager.Instance.Is_player_turn())
         {
             if (check)
             {
-                Debug.Log("player_turn, turn : "+TurnManager.Instance().Number_of_turns_performed.ToString());
+                Debug.Log("player_turn, turn : "+TurnManager.Instance.Number_of_turns_performed.ToString());
                 check_move = true;
                 check = false;
             }
@@ -197,7 +194,7 @@ public class player : MonoBehaviour
                 {
                     if (is_panel_move_end)
                     {
-                        bound = GameManager.Instance().getbound();
+                        bound = GameManager.Instance.getbound();
                         max_bound = bound.bounds.max;
                         min_bound = bound.bounds.min;
                         if (move_panels.Panels.Count == 0)
@@ -313,7 +310,7 @@ public class player : MonoBehaviour
                     }
                     if (move_panels.Panels.Count == 0)
                     {
-                        TurnManager.Instance().turn_end();
+                        TurnManager.                        Instance.turn_end();
                         EndMove();
                     }
                 }
