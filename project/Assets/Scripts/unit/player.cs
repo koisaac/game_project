@@ -47,6 +47,7 @@ public class player : MonoBehaviour
     private bool check_move;
     private bool is_panel_move_end;
     private bool is_player_move;
+    private bool is_player_attack;
 
 
     private float time;
@@ -60,6 +61,8 @@ public class player : MonoBehaviour
 
     public bool Is_moving { get => is_moving; }
     public bool Is_player_move { get => is_player_move; }
+    public bool Is_attack { get => is_attack;  }
+    public bool Is_player_attack { get => is_player_attack;  }
     public move_controller Move_panels { get => move_panels;}
 
     private Vector2 origin_postion;
@@ -74,6 +77,7 @@ public class player : MonoBehaviour
         check_move = true;
         is_panel_move_end = true;
         is_player_move = false;
+        is_player_attack = false;
 
         time = 0;
     }
@@ -88,6 +92,7 @@ public class player : MonoBehaviour
 
         is_panel_move_end = true;
         is_player_move = false;
+        is_player_attack = false;
 
         origin_postion = transform.position;
         move_panels.MoveStart(move_speed);
@@ -160,6 +165,7 @@ public class player : MonoBehaviour
         check_move = true;
         is_panel_move_end = true;
         is_player_move = false;
+        is_player_attack = false;
 
         time = 0;
 
