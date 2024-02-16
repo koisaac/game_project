@@ -121,10 +121,11 @@ public class TurnManager : MonoBehaviour
 
         unit_action_procedure = new List<int>();
         InitUnitSpeed();
-        for (int i = 0; i < show_action_number; i++)
+        do
         {
             Add_unit_action_procedure();
-        }
+        } while (unit_action_procedure[unit_action_procedure.Count-1] != round_end);
+
         number_of_turns_performed++;
         this_turn = unit_action_procedure[0];
 
