@@ -181,11 +181,11 @@ public class player : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (GameManager.Instance().Is_player_turn())
+        if (TurnManager.Instance().Is_player_turn())
         {
             if (check)
             {
-                Debug.Log("player_turn, turn : "+GameManager.Instance().Number_of_turns_performed.ToString());
+                Debug.Log("player_turn, turn : "+TurnManager.Instance().Number_of_turns_performed.ToString());
                 check_move = true;
                 check = false;
             }
@@ -313,7 +313,7 @@ public class player : MonoBehaviour
                     }
                     if (move_panels.Panels.Count == 0)
                     {
-                        GameManager.Instance().turn_end();
+                        TurnManager.Instance().turn_end();
                         EndMove();
                     }
                 }

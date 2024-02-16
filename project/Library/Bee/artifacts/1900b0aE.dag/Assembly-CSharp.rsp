@@ -382,6 +382,7 @@
 "Assets/Scripts/Manager/enemys_manager.cs"
 "Assets/Scripts/Manager/GameManager.cs"
 "Assets/Scripts/Manager/MainCameraManager.cs"
+"Assets/Scripts/Manager/TurnManager.cs"
 "Assets/Scripts/UI/move_controller.cs"
 "Assets/Scripts/UI/player_attack_Set.cs"
 "Assets/Scripts/UI/set_player_attack_sets.cs"

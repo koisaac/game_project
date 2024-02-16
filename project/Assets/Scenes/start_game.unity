@@ -1347,6 +1347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1495363701}
   - component: {fileID: 1495363700}
+  - component: {fileID: 1495363702}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1366,17 +1367,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84dad7a3a8b7544ea3d5c41dee1fd0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unit_speed: 
-  unit_action_state: 
-  unit_speed_Total_product: 0
-  unit_action_procedure: 
-  this_turn: 0
-  number_of_turns_performed: 0
   bounds:
   - {fileID: 780734710}
   map_number: 0
   button_script: {fileID: 0}
-  show_action_number: 5
 --- !u!4 &1495363701
 Transform:
   m_ObjectHideFlags: 0
@@ -1392,6 +1386,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1495363702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495363699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5d9b1ea6715e741a734c053df778cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1670882151
 GameObject:
   m_ObjectHideFlags: 0

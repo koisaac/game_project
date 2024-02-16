@@ -21,10 +21,10 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameManager.Instance().Is_this_unit_turn(unit_number))
+        if(TurnManager.Instance().Is_this_unit_turn(unit_number))
         {
-            Debug.Log("enemy turn, turn :"+GameManager.Instance().Number_of_turns_performed.ToString());
-            GameManager.Instance().turn_end();
+            Debug.Log("enemy turn, turn :"+ TurnManager.Instance().Number_of_turns_performed.ToString());
+            TurnManager.Instance().turn_end();
         }
     }
 }
