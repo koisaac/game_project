@@ -11,6 +11,10 @@ public class enemy : MonoBehaviour
     {
         this.unit_number = unit_number;
     }
+    public int GetUnitNumber()
+    {
+        return unit_number;
+    }
     public int unit_spped;
 
     void Start()
@@ -24,7 +28,7 @@ public class enemy : MonoBehaviour
         if(TurnManager.Instance.Is_this_unit_turn(unit_number))
         {
             Debug.Log("enemy turn, turn :"+ TurnManager.Instance.Number_of_turns_performed.ToString());
-            TurnManager.            Instance.turn_end();
+            //TurnManager.Instance.turn_end();
         }
     }
 }

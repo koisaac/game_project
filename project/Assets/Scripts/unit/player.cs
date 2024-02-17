@@ -309,9 +309,9 @@ public class player : MonoBehaviour
                         move_panels.Panels.Remove(move_panels.Panels[0]);
                     }
                     if (move_panels.Panels.Count == 0)
-                    {
-                        TurnManager.                        Instance.turn_end();
+                    {                        
                         EndMove();
+                        TurnManager.Instance.turn_end();
                     }
                 }
 

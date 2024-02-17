@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Unity.VisualScripting;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
@@ -17,7 +18,7 @@ public class TurnManager : MonoBehaviour
     private player Player;
     private GameObject Enemys;
     private int this_turn;
-    private int number_of_turns_performed;
+    private int number_of_turns_performed = 0;
     private int show_action_number;
 
     private const int error_number = -2;
@@ -32,6 +33,9 @@ public class TurnManager : MonoBehaviour
     public int Unit_speed_Total_product { get => unit_speed_Total_product;}
     public List<GameObject> Unit { get => unit;}
     public List<int> Unit_action_procedure { get => unit_action_procedure;}
+
+
+    public GameObject turn_bar;
 
     void Awake()
     {
@@ -154,7 +158,8 @@ public class TurnManager : MonoBehaviour
         else if (unit_action_procedure[0] == error_number) s += "erro";
         else s += "enemy turn";
         Debug.Log(s);     
-        turn_bar_manager.Instance.init();
+        turn_bar.GetComponent<turn_bar_manager>().init();
+        turn_bar.transform.Find("화살표").GetComponent<arrow_turn_bar>().init();
     }
 
 
@@ -163,7 +168,7 @@ public class TurnManager : MonoBehaviour
     {
         this.Player = player.Instance;
         this.Enemys = enemys_manager.Instance.gameObject;
-
+        number_of_turns_performed = 0;
         InitTurnSysterm();
 
     }
@@ -190,8 +195,10 @@ public class TurnManager : MonoBehaviour
         else if (unit_action_procedure[0] == error_number) s += "erro";
         else s += "enemy turn";
         Debug.Log(s);
-
         number_of_turns_performed++;
+        if(unit_action_procedure[0] != round_end && unit_action_procedure[0] != error_number)
+            turn_bar.transform.Find("화살표").GetComponent<arrow_turn_bar>().move_arrow();
+
     }
 
     void Update()
@@ -199,7 +206,9 @@ public class TurnManager : MonoBehaviour
         if(this_turn == round_end)
         {
             Debug.Log("라운드 종료");
+            number_of_turns_performed = 0;
             InitTurnSysterm();
         }
     }
+
 }

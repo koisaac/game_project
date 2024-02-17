@@ -13,22 +13,7 @@ public class turn_bar_manager : MonoBehaviour
     public float panel_length;
     private List<int> unit_action_turn_bar_state;
 
-    private static turn_bar_manager instance=null;
 
-    public static turn_bar_manager Instance { get => instance;}
-
-    void Awake()
-    {
-        if(instance == null)
-        {
-            instance = this;
-
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
 
 
     // Start is called before the first frame update

@@ -16,12 +16,12 @@ public class move : MonoBehaviour
         {
             if (!player.Instance.Is_moving)
             {
-                player.                Instance.StartMove();
+                player.Instance.StartMove();
                 move_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "취소";
             }
             else
             {
-                player.                Instance.EndMove();
+                player.Instance.EndMove();
                 move_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "이동";
 
             }
