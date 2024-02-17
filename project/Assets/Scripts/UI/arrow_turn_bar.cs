@@ -12,15 +12,17 @@ public class arrow_turn_bar : MonoBehaviour
     {
         turn_bar_manager turn_Bar = transform.parent.GetComponent<turn_bar_manager>();
         TurnManager turnManager = TurnManager.Instance;
-        target = turn_Bar.turn_bars[turnManager.Number_of_turns_performed - 1].GetComponent<RectTransform>().anchoredPosition - new Vector2(0, 32);
+        target = turn_Bar.turn_bars[turnManager.Number_of_turns_performed].GetComponent<RectTransform>().anchoredPosition - new Vector2(0, 32);
         this.GetComponent<RectTransform>().anchoredPosition=target;
+        TurnManager.Instance.next_turn();
+
     }
 
     public void move_arrow()
     {
         turn_bar_manager turn_Bar = transform.parent.GetComponent<turn_bar_manager>();
         TurnManager turnManager = TurnManager.Instance;
-        target = turn_Bar.turn_bars[turnManager.Number_of_turns_performed-1].GetComponent<RectTransform>().anchoredPosition - new Vector2(0,32);
+        target = turn_Bar.turn_bars[turnManager.Number_of_turns_performed].GetComponent<RectTransform>().anchoredPosition - new Vector2(0,32);
         StartCoroutine("Moving");
     }
 
@@ -30,9 +32,10 @@ public class arrow_turn_bar : MonoBehaviour
         while (target != this.GetComponent<RectTransform>().anchoredPosition)
         {
 
-            this.GetComponent<RectTransform>().anchoredPosition = Vector3.MoveTowards(this.GetComponent<RectTransform>().anchoredPosition, target, 0.8f);
+            this.GetComponent<RectTransform>().anchoredPosition = Vector3.MoveTowards(this.GetComponent<RectTransform>().anchoredPosition, target, 2f);
             yield return new WaitForFixedUpdate();
         }
+        TurnManager.Instance.next_turn();
     }
     public bool is_moving()
     {

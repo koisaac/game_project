@@ -43,9 +43,10 @@ public class turn_bar_manager : MonoBehaviour
                 
                 turn_bars[i].SetActive(true);
                 turn_bars[i].GetComponent<turn_bar>().Unit_number = action_unit_number;
-
+                turn_bars[i].GetComponent<turn_bar>().Unit_name = TurnManager.Instance.Unit[action_unit_number].name; 
                 turn_bars[i].GetComponent<Image>().color = new Color(setting.type_of_color[action_unit_number][0], setting.type_of_color[action_unit_number][1], setting.type_of_color[action_unit_number][2]);
                 turn_bars[i].GetComponent<RectTransform>().anchoredPosition = new Vector3(-(panel_length / 2) + ratio*TurnManager.Instance.Unit_speed[action_unit_number] * unit_action_turn_bar_state[action_unit_number], 0, 0);
+                turn_bars[i].GetComponent<turn_bar>().init();
                 unit_action_turn_bar_state[action_unit_number]++;
             }
         }

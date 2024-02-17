@@ -1990,7 +1990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8134fa32ec516e4297805e09c914665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unit_spped: 2
+  unit_spped: 3
 --- !u!1 &1757649388
 GameObject:
   m_ObjectHideFlags: 0
@@ -6067,7 +6067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad509247fd5c0849895a44c252860dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unit_spped: 3
+  unit_spped: 5
   move_speed: 10
 --- !u!1 &2079895793
 GameObject:
@@ -6190,6 +6190,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 441902026163359622, guid: ead97f2920902004f96dc031413876ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 441902026163359622, guid: ead97f2920902004f96dc031413876ba, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3980756482374110349, guid: ead97f2920902004f96dc031413876ba, type: 3}

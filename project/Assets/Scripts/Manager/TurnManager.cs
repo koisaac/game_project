@@ -24,6 +24,8 @@ public class TurnManager : MonoBehaviour
     private const int error_number = -2;
     private const int round_end = -1;
     private const int player_turn = 0;
+    private const int delay_time = -99;
+
 
 
     public int Number_of_turns_performed { get => number_of_turns_performed; }
@@ -142,24 +144,9 @@ public class TurnManager : MonoBehaviour
             Add_unit_action_procedure();
         } while (unit_action_procedure[unit_action_procedure.Count-1] != round_end);
 
-        number_of_turns_performed++;
-        this_turn = unit_action_procedure[0];
-
-        string s = "";
-        foreach (var i in unit_action_procedure)
-        {
-            s += i.ToString() + ",";
-        }
-  
-
-
-        if (unit_action_procedure[0] == player_turn) s += "player turn";
-        else if (unit_action_procedure[0] == round_end) s += "turn end";
-        else if (unit_action_procedure[0] == error_number) s += "erro";
-        else s += "enemy turn";
-        Debug.Log(s);     
         turn_bar.GetComponent<turn_bar_manager>().init();
         turn_bar.transform.Find("화살표").GetComponent<arrow_turn_bar>().init();
+   
     }
 
 
@@ -183,21 +170,33 @@ public class TurnManager : MonoBehaviour
     }
     public void turn_end()
     {
+        this_turn = delay_time;        
         unit_action_procedure.RemoveAt(0);
+        if (unit_action_procedure[0] != round_end && unit_action_procedure[0] != error_number)
+            turn_bar.transform.Find("화살표").GetComponent<arrow_turn_bar>().move_arrow();
+        else
+        {
+            next_turn();
+        }
+        
+
+    }
+    public void next_turn()
+    {
+        number_of_turns_performed++;
         this_turn = unit_action_procedure[0];
+
         string s = "";
         foreach (var i in unit_action_procedure)
         {
             s += i.ToString() + ",";
         }
+
         if (unit_action_procedure[0] == player_turn) s += "player turn";
         else if (unit_action_procedure[0] == round_end) s += "turn end";
         else if (unit_action_procedure[0] == error_number) s += "erro";
         else s += "enemy turn";
         Debug.Log(s);
-        number_of_turns_performed++;
-        if(unit_action_procedure[0] != round_end && unit_action_procedure[0] != error_number)
-            turn_bar.transform.Find("화살표").GetComponent<arrow_turn_bar>().move_arrow();
 
     }
 
