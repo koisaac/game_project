@@ -56,7 +56,7 @@ public class player : MonoBehaviour
 
     private float time;
 
-    private set_player_attack_sets attack_panels;
+    private attack_controller attack_panels;
     private move_controller move_panels;
 
     private BoxCollider2D bound;
@@ -168,7 +168,7 @@ public class player : MonoBehaviour
 
         time = 0;
 
-        attack_panels = transform.Find("attack_panels").GetComponent<set_player_attack_sets>();
+        attack_panels = transform.Find("attack_panels").GetComponent<attack_controller>();
         move_panels = transform.Find("move_panels").GetComponent<move_controller>();
     }
 

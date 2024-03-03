@@ -385,6 +385,7 @@
 "Assets/Scripts/Manager/SettiongManager.cs"
 "Assets/Scripts/Manager/TurnManager.cs"
 "Assets/Scripts/UI/arrow_turn_bar.cs"
+"Assets/Scripts/UI/attack_controller.cs"
 "Assets/Scripts/UI/move_controller.cs"
 "Assets/Scripts/UI/player_attack_Set.cs"
 "Assets/Scripts/UI/set_player_attack_sets.cs"
