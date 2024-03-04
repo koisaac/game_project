@@ -377,6 +377,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/button/Activate.cs"
 "Assets/Scripts/button/attack.cs"
+"Assets/Scripts/button/attack_scenes.cs"
 "Assets/Scripts/button/move.cs"
 "Assets/Scripts/button/move_scenes.cs"
 "Assets/Scripts/Manager/enemys_manager.cs"

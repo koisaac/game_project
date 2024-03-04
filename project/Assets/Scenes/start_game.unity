@@ -555,9 +555,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Activate, Assembly-CSharp
-        m_MethodName: attack
+      - m_Target: {fileID: 1485279547}
+        m_TargetAssemblyTypeName: attack, Assembly-CSharp
+        m_MethodName: Attack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -965,7 +965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 45.20601}
+  m_AnchoredPosition: {x: 0, y: 45.206055}
   m_SizeDelta: {x: 0, y: 90.412}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574197723
@@ -1477,7 +1477,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.000015736, y: -18.237}
+  m_AnchoredPosition: {x: 0.000015736, y: -18.23706}
   m_SizeDelta: {x: 502.43, y: 36.475006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1347582611
@@ -1729,6 +1729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485279545}
   - component: {fileID: 1485279546}
+  - component: {fileID: 1485279547}
   m_Layer: 0
   m_Name: button
   m_TagString: Untagged
@@ -1771,6 +1772,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   move_button: {fileID: 802242034}
+--- !u!114 &1485279547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485279544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527181b908e3e2b4a8f4c19202406dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack_button: {fileID: 427513963}
 --- !u!1 &1495363699
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,6 +1872,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1670882152}
   - component: {fileID: 1670882153}
+  - component: {fileID: 1670882154}
   m_Layer: 0
   m_Name: attack_panels
   m_TagString: Untagged
@@ -1890,6 +1905,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058ae3e1647a89949b116a5b678ac5f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 6346323880022379002, guid: b2c1bcdfd2933954da9b92e915470d50, type: 3}
+--- !u!114 &1670882154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670882151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31ecd60745e796b44a17a2e814078538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6346323880022379002, guid: b2c1bcdfd2933954da9b92e915470d50, type: 3}
@@ -6069,6 +6097,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unit_spped: 5
   move_speed: 10
+  attack_range: 0
+  attack_length: 0
 --- !u!1 &2079895793
 GameObject:
   m_ObjectHideFlags: 0
