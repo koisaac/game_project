@@ -50,8 +50,10 @@ public class player : MonoBehaviour
     private bool is_using_skill;
     private bool check;
     private bool check_move;
+    private bool check_attack;
     private bool is_panel_move_end;
     private bool is_player_move;
+    private bool is_player_attack;
 
 
     private float time;
@@ -77,8 +79,10 @@ public class player : MonoBehaviour
 
         check = true;
         check_move = true;
+        check_attack = true;
         is_panel_move_end = true;
         is_player_move = false;
+        is_player_attack = false;
 
         time = 0;
     }
@@ -93,6 +97,7 @@ public class player : MonoBehaviour
 
         is_panel_move_end = true;
         is_player_move = false;
+        is_player_attack = false;
 
         origin_postion = transform.position;
         move_panels.MoveStart(move_speed);
@@ -153,6 +158,28 @@ public class player : MonoBehaviour
         return check_can_move(min_bound, -1, 0);
     }
 
+    public void StartAttack()
+    {
+        is_moving = false;
+        is_attack = true;
+        is_defense = false;
+        is_using_skill = false;
+
+        is_panel_move_end = true;
+        is_player_move = false;
+        is_player_attack = false;
+
+        origin_postion = transform.position;
+        attack_panels.AttackStart();
+    }
+
+    public void EndAttack()
+    {
+        End();
+
+        attack_panels.EndAttack();
+    }
+
 
 
     // Start is called before the first frame update
@@ -165,6 +192,7 @@ public class player : MonoBehaviour
         check_move = true;
         is_panel_move_end = true;
         is_player_move = false;
+        is_player_attack = false;
 
         time = 0;
 
@@ -322,7 +350,33 @@ public class player : MonoBehaviour
             }
             else if (is_attack)
             {
+                if(!is_player_attack)
+                {
+                    bound = GameManager.Instance.getbound();
+                    max_bound = bound.bounds.max;
+                    min_bound = bound.bounds.min;
 
+                    if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+                    {
+                        check_attack = !attack_panels.AttackUp(check_attack);
+                        time = 0;
+                    }
+                    else if(Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+                    {
+                        check_attack = !attack_panels.AttackDown(check_attack);
+                        time = 0;
+                    }
+                    else if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+                    {
+                        check_attack = !attack_panels.AttackLeft(check_attack);
+                        time = 0;
+                    }
+                    else if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+                    {
+                        check_attack = !attack_panels.AttackRight(check_attack);
+                        time = 0;
+                    }
+                }
             }
             else if (is_defense)
             {
