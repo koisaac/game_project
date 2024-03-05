@@ -15,9 +15,9 @@ public class player : MonoBehaviour
 
     public int move_speed;
 
-    public int attack_range;
+    int attack_range = 1;
 
-    public int attack_length;
+    int attack_length = 3;
 
     const int move_range_size = 3;
 
@@ -207,9 +207,6 @@ public class player : MonoBehaviour
         }
 
         return can_attack;
-
-
-
     }
 
     private bool check_can_attack_down()
@@ -267,8 +264,8 @@ public class player : MonoBehaviour
                 Debug.Log("player_turn, turn : "+TurnManager.Instance.Number_of_turns_performed.ToString());
                 check_move = true;
                 check = false;
+                attack_panels.Remove_Player_Attack_set();
             }
-
 
             if (is_moving)
             {
@@ -405,7 +402,7 @@ public class player : MonoBehaviour
             else if (is_attack)
             {
                 if(!is_player_attack)
-                {
+                {                    
                     bound = GameManager.Instance.getbound();
                     max_bound = bound.bounds.max;
                     min_bound = bound.bounds.min;
@@ -417,10 +414,7 @@ public class player : MonoBehaviour
                         {
                             check_attack = !attack_panels.AttackDown(check_attack);
                         }
-                        else
-                        {
-                            MainCameraManager.Instance.shake_down();
-                        }
+
                         time = 0;
                     }
                     else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //attack up
@@ -429,10 +423,7 @@ public class player : MonoBehaviour
                         {
                             check_attack = !attack_panels.AttackUp(check_attack);
                         }
-                        else
-                        {
-                            MainCameraManager.Instance.shake_up();
-                        }
+ 
                         time = 0;
                     }
                     else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //attack_right
@@ -441,10 +432,7 @@ public class player : MonoBehaviour
                         {
                             check_attack = !attack_panels.AttackRight(check_attack);
                         }
-                        else
-                        {
-                            MainCameraManager.Instance.shake_right();
-                        }
+
                         time = 0;
                     }
                     else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) //attack_left
@@ -454,17 +442,21 @@ public class player : MonoBehaviour
                         {
                             check_attack = !attack_panels.AttackLeft(check_attack);
                         }
-                        else
-                        {
-                            MainCameraManager.Instance.shake_left();
-                        }
+
                         time = 0;
                     }
 
                     if (Input.GetKey(KeyCode.F))
                     {
+                        attack_panels.EndAttack();
                         is_player_attack = true;
                     }
+                }
+
+                else
+                {
+                    EndAttack();
+                    TurnManager.Instance.turn_end();
                 }
             }
             else if (is_defense)
