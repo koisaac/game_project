@@ -16,7 +16,7 @@ public class attack : MonoBehaviour
         {
             if (!player.Instance.Is_attack)
             {
-                if(player.Instance.is_player_move)
+                
                 player.Instance.StartAttack();
                 attack_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "√Îº“";
             }
