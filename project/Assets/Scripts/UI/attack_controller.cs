@@ -61,6 +61,7 @@ public class attack_controller : MonoBehaviour
     public List<GameObject> Panels { get => panels; }
     internal List<attack_panel_info> Attack_panel_infos { get => attack_panel_infos; }
 
+
     public void EndAttack()
     {
         did_start_attack = false;

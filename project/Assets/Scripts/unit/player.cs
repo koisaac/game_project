@@ -271,6 +271,7 @@ public class player : MonoBehaviour
             {
                 if (!is_player_move)
                 {
+                    attack_panels.Remove_Player_Attack_set();
                     if (is_panel_move_end)
                     {
                         bound = GameManager.Instance.getbound();
@@ -401,8 +402,8 @@ public class player : MonoBehaviour
             }
             else if (is_attack)
             {
-                if(!is_player_attack)
-                {                    
+                if (!is_player_attack)
+                {
                     bound = GameManager.Instance.getbound();
                     max_bound = bound.bounds.max;
                     min_bound = bound.bounds.min;
@@ -423,7 +424,7 @@ public class player : MonoBehaviour
                         {
                             check_attack = !attack_panels.AttackUp(check_attack);
                         }
- 
+
                         time = 0;
                     }
                     else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //attack_right

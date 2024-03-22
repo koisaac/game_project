@@ -12,20 +12,23 @@ public class move : MonoBehaviour
     }
     public void Move()
     {
-        if (!player.Instance.Is_player_move)
+        if(!player.Instance.Is_player_attack) 
         {
-            if (!player.Instance.Is_moving)
+            if (!player.Instance.Is_player_move)
             {
-                player.Instance.StartMove();
-                move_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "취소";
-            }
-            else
-            {
-                player.Instance.EndMove();
-                move_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "이동";
+                if (!player.Instance.Is_moving)
+                {
+                    player.Instance.StartMove();
+                    move_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "취소";
+                }
+                else
+                {
+                    player.Instance.EndMove();
+                    move_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "이동";
+
+                }
 
             }
-
         }
     }
     // Update is called once per frame

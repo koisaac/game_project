@@ -12,21 +12,24 @@ public class attack : MonoBehaviour
     }
     public void Attack()
     {
-        if (!player.Instance.Is_player_attack)
+        if(!player.Instance.Is_player_move)
         {
-            if (!player.Instance.Is_attack)
+            if (!player.Instance.Is_player_attack)
             {
-                
-                player.Instance.StartAttack();
-                attack_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "취소";
-            }
-            else
-            {
-                player.Instance.EndAttack();
-                attack_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "공격";
+                if (!player.Instance.Is_attack)
+                {
+
+                    player.Instance.StartAttack();
+                    attack_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "취소";
+                }
+                else
+                {
+                    player.Instance.EndAttack();
+                    attack_button.transform.GetChild(0).GetComponent<TMPro.TMP_Text>().text = "공격";
+
+                }
 
             }
-
         }
     }
     // Update is called once per frame
