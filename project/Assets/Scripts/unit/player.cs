@@ -42,9 +42,10 @@ public class player : MonoBehaviour
 
 
 
-    float HP;
-    int Level;
-    float EXP;
+    int HP=200;
+    int ATK = 10;
+    int CC = 20;
+    List<Effect> ATK_Effect;
     Weapon weapon;
 
 
@@ -404,6 +405,7 @@ public class player : MonoBehaviour
             {
                 if (!is_player_attack)
                 {
+                    move_panels.EndMove();
                     bound = GameManager.Instance.getbound();
                     max_bound = bound.bounds.max;
                     min_bound = bound.bounds.min;
@@ -450,6 +452,7 @@ public class player : MonoBehaviour
                     if (Input.GetKey(KeyCode.F))
                     {
                         attack_panels.EndAttack();
+                        attack_panels.attack = new Damage(0, 0,ATK,CC,ATK_Effect);
                         is_player_attack = true;
                     }
                 }

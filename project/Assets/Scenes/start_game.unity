@@ -1907,7 +1907,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 058ae3e1647a89949b116a5b678ac5f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6346323880022379002, guid: b2c1bcdfd2933954da9b92e915470d50, type: 3}
+  prefab: {fileID: 4724193242699537284, guid: 7e023b038cf797b489b1f5b426d37b86, type: 3}
 --- !u!114 &1670882154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1920,7 +1920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ecd60745e796b44a17a2e814078538, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6346323880022379002, guid: b2c1bcdfd2933954da9b92e915470d50, type: 3}
+  prefab: {fileID: 4724193242699537284, guid: 7e023b038cf797b489b1f5b426d37b86, type: 3}
 --- !u!1 &1685248186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,6 +1932,8 @@ GameObject:
   - component: {fileID: 1685248188}
   - component: {fileID: 1685248187}
   - component: {fileID: 1685248189}
+  - component: {fileID: 1685248191}
+  - component: {fileID: 1685248190}
   m_Layer: 0
   m_Name: "\uC18C\uD615 \uC720\uB839 (1)"
   m_TagString: Untagged
@@ -2019,6 +2021,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unit_spped: 3
+--- !u!61 &1685248190
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685248186}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 14.4, y: 14.4}
+    newSize: {x: 14.4, y: 14.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 14.4, y: 14.4}
+  m_EdgeRadius: 0
+--- !u!114 &1685248191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685248186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6931a59377be72459f7f5d57c7924d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1757649388
 GameObject:
   m_ObjectHideFlags: 0

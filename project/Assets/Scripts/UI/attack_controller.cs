@@ -55,12 +55,14 @@ public class attack_controller : MonoBehaviour
     private int r_count;
     private int l_count;
 
-    //디버그용 변수
+    //디버그용 변수였지만 이제 지우면 안됨
     private bool did_start_attack = false;
 
+    private bool is_confirmed = false;
     public List<GameObject> Panels { get => panels; }
     internal List<attack_panel_info> Attack_panel_infos { get => attack_panel_infos; }
 
+    public Damage attack;
 
     public void EndAttack()
     {
@@ -71,7 +73,13 @@ public class attack_controller : MonoBehaviour
     {
         foreach (GameObject g in panels)
         {
+            if(!did_start_attack) //endattack 시행, 즉 공격 확정 여부를 나타냄
+            {
+                g.GetComponent<Attack_damager>().tile_attack = attack;
+            }
             Destroy(g);
+
+            attack = null;
         }
         panels.Clear();
         attack_panel_infos.Clear();
